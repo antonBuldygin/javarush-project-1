@@ -1,0 +1,229 @@
+body {
+      font-family: 'Roboto', 'Inter', sans-serif;
+}
+div {
+      text-align: center;
+      box-sizing: border-box;
+      /*border: solid 1px red;*/
+      margin: 5px;
+      padding: 5px;
+}
+a {
+      color: #000;
+      text-decoration: none;
+      cursor: cell;
+}
+main {
+      display: flex;
+      background-color: lightgrey;
+      flex-wrap: wrap;
+      width: 100%;
+      /*justify-content: space-around;*/
+      justify-content: center;
+      /*justify-content: space-evenly;*/
+}
+.menu_block h1 {
+      text-align: start;
+      margin-left: 80px;
+}
+.menu_block, .top-menu { width: 100%;
+      margin-left: 0%;
+}
+/*main div {*/
+/*    !*flex: 1 1 calc(33.333% - 20px);*!*/
+/*}*/
+main #manage {
+      background-color: #FFFFFF;
+      width: 50%;
+      margin-left: 3%;
+}
+main #tickets {background-color: #FFFFFF;
+      width: 40%;
+}
+main #destinations {background-color: #FFFFFF;
+      width: 50%;
+}
+main #top-10-airlines {background-color: #FFFFFF;
+      width: 40%;
+}
+main #hot-tickets {
+      background-color: #FFFFFF;
+      width: 50%;
+}
+main #faq {width: 40%;
+      height: 20%;
+      background-color: #FFFFFF;}
+main #proposals {width: 40%;
+      height: 20%;
+      background-color: #FFFFFF; }
+footer {
+      background-color: #FAFAFA;
+}
+footer ul {
+      text-align: left;
+      list-style-type: none;
+}
+.footer-content {
+      display: flex;
+}
+.low-images {
+      width: 90%;
+      justify-content: stretch;
+      display: flex;
+}
+.top-images {
+      width: 90%;
+      justify-content: stretch; /* горизонтальное центрирование */
+      /*align-items: center; /*/
+      display: flex;
+}
+#header {
+      /*display: flex;*/
+      left: 0;
+      line-height: 3.5em;
+      top: 0;
+      width: 100%;
+      background-color: #6E36F7;
+}
+#header .list_of_options {
+      display: flex;
+      /*flex-direction: column;*/
+      justify-content: flex-start; /* Распределение элементов с равными промежутками */
+      padding: 10px;
+}
+
+.nav-item {
+      color: white;
+      /*text-decoration: none;*/
+      padding: 10px 20px;
+      background-color: #a182f6;
+      
+      border-radius: 15px;
+}
+.nav-item:hover {
+      background-color: #5e488d;
+}
+#header .list_of_options a {
+      color: #FFFFFF;
+}
+#header .find {
+      background-color: #FF4D4D;
+      border: #FFFFFF;
+      font-size: 13px;
+      color: #FFFFFF;
+}
+#header .navmenu a {
+      color: #FFFFFF
+}
+.navmenu #language {
+      background-color: #6E36F7;
+      color: #FFFFFF
+}
+/*.menu_block .links {*/
+/*      align-content: stretch;*/
+/*      width: 100%;*/
+/*      box-sizing: border-box;*/
+/*}*/
+.menu_block h1 {
+      width: 100%;
+      color: hotpink;
+      height: 30px;
+}
+p, td {text-align: justify;
+      margin: 5%;
+}
+td, th {text-align: left;
+      margin: 5%;
+}
+#manage {text-align: left;
+      margin: 5%;}
+#header #search-form fieldset {
+      display: flex;
+      width: 95%;
+      color: darkgray;
+      background-color: #FFFFFF;
+}
+#header .city-from-menu, .city-to-menu, .data-to-menu, .data-from-menu, .passenger-menu {
+      /*flex: 1 1 calc(33.333% - 20px);*/
+      height: 10%;
+      width: 20%;
+      background-color: darkgray;
+}
+#header #cities, #cities_to {
+      width: 60%;
+}
+.passengers-button {
+      color: darkgray;
+      background-color: #FFFFFF;
+      border: #FFFFFF;
+}
+#header ul li {
+      display: inline-block;
+      padding: 5px;
+      margin: 5px;
+      height: 10%;
+}
+#header ul li:hover {
+      background-color: #a182f6;
+}
+.partners-programm {color: rgba(7, 7, 245, 0.84);
+      border: solid 1px rgba(7, 7, 245, 0.84);
+      text-align: center;
+      padding: 14px;
+      height: 50px;
+      border-radius: 5px;
+      /*vertical-align: middle;*/
+}
+
+
+/*| Navigation |*/
+
+#navv{
+      /*background: #334; !* Задаем основной фон меню *!*/
+      padding: 0 3%; /* Задаем внутренние отступы */
+      float: right;
+      margin-right: 100px;
+      
+}
+
+#navv ul {
+      list-style: none; /* Убираем маркер для элементов списка */
+}
+
+#navv ul li {
+      background: #a182f6;
+      display:inline-block;/*Выстраиваем пункты меню в ряд по горизонтали */
+      border-radius: 15px;
+}
+
+#navv ul li a {
+      display:block; /* Настраиваем оформление пунктов меню */
+      /*padding: 1px 10px;*/
+      font-size: .9em;
+      color: #FFFFFF;
+      /*letter-spacing: 1px;*/
+      /*text-decoration: none;*/
+      /*text-transform: uppercase;*/
+      /*border-top: 1px solid #445;*/
+      height: 30px;
+     
+      
+}
+
+#navv ul li:hover {
+      background: #5e488d; /* Меняем фон пункта меню при наведении указателя мыши */
+}
+
+#navv ul li ul {
+      display: none; /* Прячем пункты выпадающего блока меню */
+      position:absolute;
+      background: #a182f6; /* Задаем фон выпадающего блока меню */
+}
+
+#navv ul li:hover ul {
+      display:block; /* Отображаем подменю при наведении мыши */
+}
+
+#navv ul li ul li {
+      display:block; /* Выстраиваем по вертикали пункты выпадающего меню */
+}

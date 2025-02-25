@@ -7,6 +7,7 @@ div {
       /*border: solid 1px red;*/
       margin: 5px;
       padding: 5px;
+      border-radius: 5px;
 }
 a {
       color: #000;
@@ -40,19 +41,42 @@ main #manage {
 main #tickets {background-color: #FFFFFF;
       width: 40%;
 }
-main #destinations {background-color: #FFFFFF;
+main #destinations {
       width: 50%;
 }
-main #top-10-airlines {background-color: #FFFFFF;
+main #destinations .text {background-color: #FFFFFF; text-align: left;
+      padding-left: 10px; height: 250px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+}
+main #destinations .text div { text-align: justify;
+}
+main #destinations h2 { text-align: left;
+}
+main #top-10-airlines {
       width: 40%;
 }
-main #hot-tickets {
-      background-color: #FFFFFF;
-      width: 50%;
+main #top-10-airlines .text {background-color: #FFFFFF; text-align: left;
+      padding-left: 10px;
 }
-main #faq {width: 40%;
-      height: 20%;
-      background-color: #FFFFFF;}
+main #top-10-airlines h2 { text-align: left;
+}
+main #hot-tickets {
+      width: 60%;
+}
+main #hot-tickets .text {
+      background-color: #FFFFFF; text-align: left;
+      padding-left: 10px;}
+main #hot-tickets h2 {
+      text-align: left;
+}
+main #hot-tickets .text p {
+      text-align: justify;padding-left: 5px;
+      padding-right: 10px;
+}
+main #faq .text { background-color: #FFFFFF; text-align: left;
+      padding-left: 10px;}
 main #proposals {width: 40%;
       height: 20%;
       background-color: #FFFFFF; }
@@ -91,13 +115,11 @@ footer ul {
       justify-content: flex-start; /* Распределение элементов с равными промежутками */
       padding: 10px;
 }
-
 .nav-item {
       color: white;
       /*text-decoration: none;*/
       padding: 10px 20px;
       background-color: #a182f6;
-      
       border-radius: 15px;
 }
 .nav-item:hover {
@@ -129,14 +151,12 @@ footer ul {
       color: hotpink;
       height: 30px;
 }
-p, td {text-align: justify;
+td {text-align: justify;
       margin: 5%;
 }
 td, th {text-align: left;
       margin: 5%;
 }
-#manage {text-align: left;
-      margin: 5%;}
 #header #search-form fieldset {
       display: flex;
       width: 95%;
@@ -174,30 +194,25 @@ td, th {text-align: left;
       border-radius: 5px;
       /*vertical-align: middle;*/
 }
-
-
 /*| Navigation |*/
-
-#navv{
+#navv {
       /*background: #334; !* Задаем основной фон меню *!*/
       padding: 0 3%; /* Задаем внутренние отступы */
       float: right;
       margin-right: 100px;
-      
 }
-
 #navv ul {
       list-style: none; /* Убираем маркер для элементов списка */
 }
-
 #navv ul li {
       background: #a182f6;
-      display:inline-block;/*Выстраиваем пункты меню в ряд по горизонтали */
+      display: inline-block; /*Выстраиваем пункты меню в ряд по горизонтали */
       border-radius: 15px;
+      height: 40px;
 }
-
 #navv ul li a {
-      display:block; /* Настраиваем оформление пунктов меню */
+      display: inline-flex; /* Настраиваем оформление пунктов меню */
+      align-items: flex-start;
       /*padding: 1px 10px;*/
       font-size: .9em;
       color: #FFFFFF;
@@ -206,24 +221,37 @@ td, th {text-align: left;
       /*text-transform: uppercase;*/
       /*border-top: 1px solid #445;*/
       height: 30px;
-     
-      
 }
-
 #navv ul li:hover {
       background: #5e488d; /* Меняем фон пункта меню при наведении указателя мыши */
 }
-
 #navv ul li ul {
       display: none; /* Прячем пункты выпадающего блока меню */
-      position:absolute;
+      position: absolute;
       background: #a182f6; /* Задаем фон выпадающего блока меню */
 }
-
 #navv ul li:hover ul {
-      display:block; /* Отображаем подменю при наведении мыши */
+      display: block; /* Отображаем подменю при наведении мыши */
 }
-
 #navv ul li ul li {
-      display:block; /* Выстраиваем по вертикали пункты выпадающего меню */
+      display: block; /* Выстраиваем по вертикали пункты выпадающего меню */
 }
+.top-menu {display: flex;
+      justify-content: flex-end;
+      align-self: flex-end;
+}
+#language {margin-top: 20px;height: 30px;}
+/*#manage {display: flex;}*/
+.manage_img {width: 50%; border: 1px solid darkgray; height: 60px;
+      background-color: palevioletred; }
+.manage_img a {color: pink; justify-content: left}
+.manage_text {display: flex;flex-wrap: wrap;flex-direction: row;text-align: left;width: 100%;}
+.manage_text div::before {content: "✓";color: green}
+#manage h2 {text-align: left; }
+#manage ul { list-style-type: none;}
+#manage .container {display: flex;flex-wrap: wrap;flex-direction: row;justify-content: stretch}
+#tickets h2 {text-align: left; }
+#tickets ul { list-style-type: none;}
+#tickets .container {display: flex;flex-wrap: wrap;flex-direction: row; justify-content: stretch}
+#proposals {display: flex;flex-wrap: wrap;flex-direction: row; justify-content: stretch}
+#proposals form {width: 100%; }

@@ -23,6 +23,7 @@ main {
       justify-content: center;
       /*justify-content: space-evenly;*/
 }
+main div { flex-shrink: 1;flex-basis: auto;flex-grow: 1}
 .menu_block h1 {
       text-align: start;
       margin-left: 80px;
@@ -42,20 +43,80 @@ main #tickets {background-color: #FFFFFF;
       width: 40%;
 }
 main #destinations {
-      width: 50%;
+      /*width: 20%;*/
+      /*      flex-shrink: 0;flex-basis: 30%;flex-grow: 2;*/
 }
 main #destinations .text {background-color: #FFFFFF; text-align: left;
-      padding-left: 10px; height: 250px;
+      padding-left: 10px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      /*height: 50%;*/
+}
+@media (min-width: 320px) and (max-width: 768px) {
+      main #destinations .text {background-color: #FFFFFF; text-align: left;
+            /*width: 100%;*/
+            padding-left: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: auto;
+            font-size: 9px;
+      }
+      body {
+            padding: 20px;
+      }
+      .footer-content ul li {
+            display: none; /* Прячем пункты выпадающего блока меню */
+            position: absolute;
+            background: #a182f6; /* Задаем фон выпадающего блока меню */
+      }
+      .footer-content { justify-content: stretch; /* горизонтальное центрирование */
+            /*align-items: center; /*/
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;}
+      main {
+            display: flex;
+            background-color: lightgrey;
+            flex-wrap: wrap;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+            /*justify-content: center;*/
+            /*justify-content: space-evenly;*/
+      }
+      #header #search-form fieldset {
+            display: flex;
+            /*width: 95%;*/
+            color: darkgray;
+            background-color: #FFFFFF;
+            flex-direction: column;
+      }
+      #header .list_of_options {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Распределение элементов с равными промежутками */
+            /*padding: 10px;*/
+      }
+      #header .list_of_options div {flex-shrink: 1;flex-grow: 2}
+      .top-menu {display: flex;
+            justify-content: flex-end;
+            align-self: flex-end;
+            flex-direction: column;
+      }
+      #best-tickets{font-size: 10px; text-align: left; margin-left: 0px}
+      #language{width: 15%;}
 }
 main #destinations .text div { text-align: justify;
+      div { flex-shrink: 1;flex-grow: 2}
 }
 main #destinations h2 { text-align: left;
 }
 main #top-10-airlines {
-      width: 40%;
+      /*width: 40%;*/
+      flex-shrink: 2;flex-basis: auto;flex-grow: 1
 }
 main #top-10-airlines .text {background-color: #FFFFFF; text-align: left;
       padding-left: 10px;
@@ -89,17 +150,21 @@ footer ul {
 }
 .footer-content {
       display: flex;
+      flex-wrap: wrap;
 }
 .low-images {
       width: 90%;
       justify-content: stretch;
       display: flex;
+      flex-wrap: wrap;
 }
+.footer-content div { flex-shrink: 0;flex-basis: auto;flex-grow: 1}
 .top-images {
       width: 90%;
       justify-content: stretch; /* горизонтальное центрирование */
       /*align-items: center; /*/
       display: flex;
+      flex-wrap: wrap;
 }
 #header {
       /*display: flex;*/
@@ -109,12 +174,16 @@ footer ul {
       width: 100%;
       background-color: #6E36F7;
 }
+
 #header .list_of_options {
       display: flex;
-      /*flex-direction: column;*/
-      justify-content: flex-start; /* Распределение элементов с равными промежутками */
+      flex-direction: row;
+      /*justify-content: flex-start; !* Распределение элементов с равными промежутками *!*/
       padding: 10px;
+      flex-wrap: wrap;
 }
+
+#best-tickets{width: 100%}
 .nav-item {
       color: white;
       /*text-decoration: none;*/
@@ -180,7 +249,7 @@ td, th {text-align: left;
 #header ul li {
       display: inline-block;
       padding: 5px;
-      margin: 5px;
+      /*margin: 5px;*/
       height: 10%;
 }
 #header ul li:hover {
@@ -241,7 +310,7 @@ td, th {text-align: left;
       align-self: flex-end;
 }
 #language {margin-top: 20px;height: 30px;}
-/*#manage {display: flex;}*/
+#manage div { flex-shrink: 0;flex-basis: auto;flex-grow: 1}
 .manage_img {width: 50%; border: 1px solid darkgray; height: 60px;
       background-color: palevioletred; }
 .manage_img a {color: pink; justify-content: left}

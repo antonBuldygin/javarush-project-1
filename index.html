@@ -10,28 +10,28 @@
 <body>
 <header id="header">
 	<div class="top-menu">
-		<nav class="navmenu">
+		<nav id="navv">
 			<ul>
-				<li class="corporate_clients">
-					<a href="#home">Корпоративным клиентам</a>
+				<li>
+					<a href="#/">Корпоративным клиентам</a>
 				</li>
-				<li class="sub-menu">
-					<a href="#about">Авиабилеты</a>
+				<li>
+					<a href="#">Авиабилеты</a>
 					<ul>
 						<li>
-							<a href="#blog.html">Цены</a>
+							<a href="#/about">Цены</a>
 						</li>
 						<li>
-							<a href="#blog-post.html">Скидки</a>
+							<a href="#/history">Скидки</a>
 						</li>
 						<li>
-							<a href="#portfolio-post.html">Направления</a>
+							<a href="#/privacy-policy">Направления</a>
 						</li>
 					</ul>
 				</li>
-				<li class="sub-menu">
-					<a href="#help">Справка</a>
-					<ul>
+				<li>
+					<a href="/sitemap">Справка</a>
+					<ul class="second">
 						<li>
 							<a href="#blog.html">Правила бронирования билетов</a>
 						</li>
@@ -44,40 +44,45 @@
 					</ul>
 				</li>
 			</ul>
-			<select id='language' name="language">
-				<option value="ru">Русский</option>
-				<option value="en">English</option>
-				<option value="cn">Chinese</option>
-			</select>
+		</nav>
+		<select id='language' name="language">
+			<option value="ru">Русский</option>
+			<option value="en">English</option>
+			<option value="cn">Chinese</option>
+		</select>
 		</nav>
 	</div>
 	<div class="menu_block">
 		<h1>Лучшие авиабилеты по самым низким ценам</h1>
 		<div class="list_of_options">
-			<nav class="links">
-				<ul>
-					<li>
-						<a href="#airtickets">Авиабилеты</a>
-					</li>
-					<li>
-						<a href="#railtickets">Ж/д билеты</a>
-					</li>
-					<li>
-						<a href="#buses">Автобусы</a>
-					</li>
-					<li>
-						<a href="#hotels">Отели</a>
-					</li>
-					<li>
-						<a href="#insuarance">Страхование</a>
-					</li>
-				</ul>
-			</nav>
+			<!--			<nav class="links">-->
+			<!--				<ul>-->
+			<div>
+				<a href="https://javarush.com/quests/lectures/ru.javarush.web.core.lecture.level09.lecture06"
+				   target='_blank' class="nav-item">Авиабилеты
+				</a>
+			</div>
+			<div>
+				<a href="https://javarush.com/quests/lectures/ru.javarush.web.core.lecture.level09.lecture06"
+				   target='_blank' class="nav-item">Ж/д билеты
+				</a>
+			</div>
+			<div>
+				<a href="#buses" class="nav-item">Автобусы</a>
+			</div>
+			<div>
+				<a href="#hotels" class="nav-item">Отели</a>
+			</div>
+			<div>
+				<a href="#insuarance" class="nav-item">Страхование</a>
+			</div>
+			<!--				</ul>-->
+			<!--			</nav>-->
 		</div>
 		<div id="search-form">
 			<form method="get" action="#">
 				<fieldset>
-					<div class="search-menu">
+					<div class="city-from-menu">
 						<label for="city-from">Откуда</label>
 						<input list="city-from" name="city-from" id="cities">
 						<datalist id="city-from">
@@ -112,7 +117,7 @@
 							</option>
 						</datalist>
 					</div>
-					<div>
+					<div class="city-to-menu">
 						<label for="city-to">Куда</label>
 						<input list="city-to" name="city-to" id="cities_to">
 						<datalist id="city-to">
@@ -147,15 +152,15 @@
 							</option>
 						</datalist>
 					</div>
-					<div>
+					<div class="data-to-menu">
 						<label for="datato">Туда</label>
 						<input type="date" name="data-to" min="2024-06-01" max="2025-08-31" id="datato"/>
 					</div>
-					<div>
+					<div class="data-from-menu">
 						<label for="datafrom">Обратно</label>
 						<input type="date" name="datafrom" min="2024-06-01" max="2025-08-31" id="datafrom"/>
 					</div>
-					<div>
+					<div class="passenger-menu">
 						<button autofocus class='passengers-button'>Пассажиры, Класс</button>
 						<dialog>
 							<p>Пассажиры, Класс </p>
@@ -383,166 +388,179 @@
 </main>
 <footer>
 	<div class="top-images">
-		<img src="img/assets/iata.svg" alt="IATA логотип" width="150px">
-		<img src="img/assets/pci.svg" alt="Security Standards Council" width="200px">
-		<img src="img/assets/visa.svg" alt="Виза логотип" width="50px">
-		<img src="img/assets/mastercard.svg" alt="Мастеркард логотип" width="50px">
+		<div>
+			<img src="img/assets/iata.svg" alt="IATA логотип" width="150px">
+		</div>
+		<div>
+			<img src="img/assets/pci.svg" alt="Security Standards Council" width="200px">
+		</div>
+		<div>
+			<img src="img/assets/visa.svg" alt="Виза логотип" width="50px">
+		</div>
+		<div>
+			<img src="img/assets/mastercard.svg" alt="Мастеркард логотип" width="50px">
+		</div>
 	</div>
-	<div class="countries">
-		<h4>Страны</h4>
-		<ul>
-			<li>
-				<a href="#return">Испания</a>
-			</li>
-			<li>
-				<a href="#return">Турция</a>
-			</li>
-			<li>
-				<a href="#return">Египет</a>
-			</li>
-			<li>
-				<a href="#return">Грузия</a>
-			</li>
-			<li>
-				<a href="#return">Польша</a>
-			</li>
-			<li>
-				<a href="#return">Франция</a>
-			</li>
-			<li>
-				<a href="#all">Все страны→</a>
-			</li>
-		</ul>
-	</div>
-	<div class="cities">
-		<h4>Города</h4>
-		<ul>
-			<li>
-				<a href="#return">Кишинев</a>
-			</li>
-			<li>
-				<a href="#return">Дубаи</a>
-			</li>
-			<li>
-				<a href="#return">Варшава</a>
-			</li>
-			<li>
-				<a href="#return">Прага</a>
-			</li>
-			<li>
-				<a href="#return">Париж</a>
-			</li>
-			<li>
-				<a href="#return">Франкфурт</a>
-			</li>
-			<li>
-				<a href="#all">Все города→</a>
-			</li>
-		</ul>
-	</div>
-	<div class="destinations">
-		<h4>Направления</h4>
-		<ul>
-			<li>
-				<a href="#return">Кишинев - Стамбул
-				</a>
-			</li>
-			<li>
-				<a href="#return">Кишинев -Анталия</a>
-			</li>
-			<li>
-				<a href="#return">Варшава - Торонто</a>
-			</li>
-			<li>
-				<a href="#return">Варшава - Париж</a>
-			</li>
-			<li>
-				<a href="#return">Кишинев - Тбилиси</a>
-			</li>
-			<li>
-				<a href="#return">Варшава - Стамбул</a>
-			</li>
-			<li>
-				<a href="#all">Все направления→</a>
-				<
-			</li>
-		</ul>
-	</div>
-	<div class="airports">
-		<h4>Аэропорты</h4>
-		<ul>
-			<li>
-				<a href="#return">Ф.Шопен (Варшава)</a>
-			</li>
-			<li>
-				<a href="#return">Франкфурт Интернешнл</a>
-			</li>
-			<li>
-				<a href="#return">Аэропорт Кишинев</a>
-			</li>
-			<li>
-				<a href="#return">Фиумичино (Рим)</a>
-			</li>
-			<li>
-				<a href="#return">Аэропорт Стамбула</a>
-			</li>
-			<li>
-				<a href="#return">Шарль Де Голь (Париж)</a>
-			</li>
-			<li>
-				<a href="#all">Все аэропорты→</a>
-			</li>
-		</ul>
-	</div>
-	<div class="airlines">
-		<h4>Авиакомпании</h4>
-		<ul>
-			<li>
-				<a href="#return">Турецкие авиалинии(Turkish Airlines)</a>
-			</li>
-			<li>
-				<a href="#return">Wizz Air (Украина)</a>
-			</li>
-			<li>
-				<a href="#return">Qatar Airways Cargo</a>
-			</li>
-			<li>
-				<a href="#return">Ryanair</a>
-			</li>
-			<li>
-				<a href="#return">Air Baltic</a>
-			</li>
-			<li>
-				<a href="#all">Все авиакомпании→</a>
-			</li>
-		</ul>
-	</div>
-	<div class="services">
-		<ul>
-			<li>
-				<a href="#return">Наши сервисы</a>
-			</li>
-			<li>
-				<a href="#return">Рейтинг авиакомпаний</a>
-			</li>
-			<li>
-				<a href="#return">Сравнение цен</a>
-			</li>
-			<li>
-				<a href="#return">Расписание рейсов</a>
-			</li>
-			<li>
-				<a href="#return">Акции</a>
-			</li>
-			<li></li>
-			<li></li>
-			<li>
-				<a href="#all">Карта сайта→</a>
-			</li>
-		</ul>
+	<div class="footer-content">
+		<div>
+			<h4>Страны</h4>
+			<ul>
+				<li>
+					<a href="#return">Испания</a>
+				</li>
+				<li>
+					<a href="#return">Турция</a>
+				</li>
+				<li>
+					<a href="#return">Египет</a>
+				</li>
+				<li>
+					<a href="#return">Грузия</a>
+				</li>
+				<li>
+					<a href="#return">Польша</a>
+				</li>
+				<li>
+					<a href="#return">Франция</a>
+				</li>
+				<li>
+					<a href="#all">Все страны→</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h4>Города</h4>
+			<ul>
+				<li>
+					<a href="#return">Кишинев</a>
+				</li>
+				<li>
+					<a href="#return">Дубаи</a>
+				</li>
+				<li>
+					<a href="#return">Варшава</a>
+				</li>
+				<li>
+					<a href="#return">Прага</a>
+				</li>
+				<li>
+					<a href="#return">Париж</a>
+				</li>
+				<li>
+					<a href="#return">Франкфурт</a>
+				</li>
+				<li>
+					<a href="#all">Все города→</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h4>Направления</h4>
+			<ul>
+				<li>
+					<a href="https://www.aviasales.ru/?marker=15468.yddbb47501869413&yclid=16151912964366794751"
+					   target='_blank'>Кишинев - Стамбул
+					</a>
+				</li>
+				<li>
+					<a href="https://www.aviasales.ru/?marker=15468.yddbb47501869413&yclid=16151912964366794751"
+					   target='_blank'>Кишинев -Анталия
+					</a>
+				</li>
+				<li>
+					<a href="https://www.aviasales.ru/?marker=15468.yddbb47501869413&yclid=16151912964366794751"
+					   target='_blank'>Варшава - Торонто
+					</a>
+				</li>
+				<li>
+					<a href="#return">Варшава - Париж</a>
+				</li>
+				<li>
+					<a href="#return">Кишинев - Тбилиси</a>
+				</li>
+				<li>
+					<a href="#return">Варшава - Стамбул</a>
+				</li>
+				<li>
+					<a href="#all">Все направления→</a>
+					<
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h4>Аэропорты</h4>
+			<ul>
+				<li>
+					<a href="#return">Ф.Шопен (Варшава)</a>
+				</li>
+				<li>
+					<a href="#return">Франкфурт Интернешнл</a>
+				</li>
+				<li>
+					<a href="#return">Аэропорт Кишинев</a>
+				</li>
+				<li>
+					<a href="#return">Фиумичино (Рим)</a>
+				</li>
+				<li>
+					<a href="#return">Аэропорт Стамбула</a>
+				</li>
+				<li>
+					<a href="#return">Шарль Де Голь (Париж)</a>
+				</li>
+				<li>
+					<a href="#all">Все аэропорты→</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h4>Авиакомпании</h4>
+			<ul>
+				<li>
+					<a href="#return">Турецкие авиалинии(Turkish Airlines)</a>
+				</li>
+				<li>
+					<a href="#return">Wizz Air (Украина)</a>
+				</li>
+				<li>
+					<a href="#return">Qatar Airways Cargo</a>
+				</li>
+				<li>
+					<a href="#return">Ryanair</a>
+				</li>
+				<li>
+					<a href="#return">Air Baltic</a>
+				</li>
+				<li>
+					<a href="#all">Все авиакомпании→</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h4>Наши сервисы</h4>
+			<ul>
+				<li>
+					<a href="#return">Рейтинг авиакомпаний</a>
+				</li>
+				<li>
+					<a href="#return">Сравнение цен</a>
+				</li>
+				<li>
+					<a href="#return">Расписание рейсов</a>
+				</li>
+				<li>
+					<a href="#return">Акции</a>
+				</li>
+				<li></li>
+				<li></li>
+				<li>
+					<a href="#all">Карта сайта→</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<div class="low-images">
-		<div> Партнерская программа</div>
+		<div class='partners-programm'> Партнерская программа</div>
 		<div>
 			<img src="img/assets/ttn.png" alt="TTN логотип" width="100px">
 		</div>

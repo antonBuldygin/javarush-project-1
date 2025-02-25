@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Лучшие авиабилеты по самым низким ценам</title>
 	<link rel="icon" href="img/subscribe-laptop.svg" type="image/x-icon"/>
-	<link href="css/styles1.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900">
 </head>
 <body>
 <header id="header">
 	<div class="top-menu">
-		<nav class="navmenu center">
+		<nav class="navmenu">
 			<ul>
 				<li class="corporate_clients">
 					<a href="#home">Корпоративным клиентам</a>
@@ -43,7 +44,7 @@
 					</ul>
 				</li>
 			</ul>
-			<select id="language" name="language">
+			<select id='language' name="language">
 				<option value="ru">Русский</option>
 				<option value="en">English</option>
 				<option value="cn">Chinese</option>
@@ -52,7 +53,7 @@
 	</div>
 	<div class="menu_block">
 		<h1>Лучшие авиабилеты по самым низким ценам</h1>
-		<div class="pull-right">
+		<div class="list_of_options">
 			<nav class="links">
 				<ul>
 					<li>
@@ -73,10 +74,10 @@
 				</ul>
 			</nav>
 		</div>
-		<div id="search-form" class="pull-right">
+		<div id="search-form">
 			<form method="get" action="#">
 				<fieldset>
-					<div>
+					<div class="search-menu">
 						<label for="city-from">Откуда</label>
 						<input list="city-from" name="city-from" id="cities">
 						<datalist id="city-from">
@@ -154,19 +155,17 @@
 						<label for="datafrom">Обратно</label>
 						<input type="date" name="datafrom" min="2024-06-01" max="2025-08-31" id="datafrom"/>
 					</div>
-					<dialog open>
-						<div>
+					<div>
+						<button autofocus class='passengers-button'>Пассажиры, Класс</button>
+						<dialog>
 							<p>Пассажиры, Класс </p>
 							<p>Максимум 9 пассажиров </p>
 							<label for="adults">Взрослые <span>старше 12 лет</span></label>
 							<input type="number" id="adults" name="adults" min="1" max="9"/>
-
 							<label for="children">Дети <span>2-12 лет</span></label>
 							<input type="number" id="children" name="children" min="1" max="9"/>
-
 							<label for="babies">Младенцы <span>до 2 лет</span></label>
 							<input type="number" id="babies" name="babies" min="1" max="9"/>
-
 							<input type="radio" id="anytype" name="ticketclass" value="anytype" checked>
 							<label for="anytype">Любой</label>
 							<input type="radio" id="business" name="ticketclass" value="business">
@@ -174,17 +173,16 @@
 							<input type="radio" id="econom" name="ticketclass" value="econom">
 							<label for="business">Эконом</label>
 							<button autofocus>OK</button>
-						</div>
-					</dialog>
-					<button>Пассажиры, Класс</button>
-					<input type="submit" value="Найти">
+						</dialog>
+					</div>
+					<input type="submit" value="Найти" class="find">
 				</fieldset>
 			</form>
 		</div>
 	</div>
 </header>
 <main>
-	<section id="manage">
+	<div id="manage">
 		<h2>Управляйте Вашими билетами в телеграмм</h2>
 		<ul>
 			<li>Доступ к билетам и кабинету</li>
@@ -193,8 +191,8 @@
 			<img src="img/assets/telegram-ru.png" alt="телеграмм на телефоне" width="100px">
 		</ul>
 		<a href="#https://www.w3schools.com">Посмотреть Возможности</a>
-	</section>
-	<section id="tickets">
+	</div>
+	<div id="tickets">
 		<h2>Билеты на автобус по Китаю и Европе</h2>
 		<ul>
 			<li>Удобное сравнение цен</li>
@@ -202,8 +200,8 @@
 			<img src="img/assets/bus-light.png" alt="Автобус" width="100px">
 		</ul>
 		<a href="#https://www.w3schools.com">Найти билеты</a>
-	</section>
-	<section id="destinations">
+	</div>
+	<div id="destinations">
 		<h2>Популярные направления</h2>
 		<div>
 			<p>Варшава -> Милан <span>от 771€ </span>
@@ -229,8 +227,8 @@
 			<p>Варшава -> Аликанте <span> от 3771€ </span>
 			</p>
 		</div>
-	</section>
-	<section id="top-10-airlines">
+	</div>
+	<div id="top-10-airlines">
 		<h2>ТОП-10 Авиакомпаний</h2>
 		<a href="#order-ticket">Подробнее</a>
 		<table>
@@ -307,8 +305,8 @@
 			</tr>
 			</tbody>
 		</table>
-	</section>
-	<section id="hot-tickets">
+	</div>
+	<div id="hot-tickets">
 		<h2>Горящие распродажи авиарейсов</h2>
 		<h3>Как найти авиабилеты со скидкой онлайн</h3>
 		<p>Казалось бы, доступные путешествия и дешёвые билеты остались в далёком прошлом. Прямых рейсов за границу из
@@ -350,8 +348,8 @@
 		   одном месте — вам не придётся сравнивать цены на разных сайтах, чтобы выбрать подходящий вариант. Яндекс
 		   Путешествия не берут комиссий и сразу показывают цену, по которой вы забронируете билет на сайте
 		   партнёра.</p>
-	</section>
-	<section id="faq">
+	</div>
+	<div id="faq">
 		<h2>Частые вопросы</h2>
 		<ul>
 			<li>
@@ -373,15 +371,15 @@
 				<a href="#all">Все темы</a>
 			</li>
 		</ul>
-	</section>
-	<section id="proposals">
+	</div>
+	<div id="proposals">
 		<h2>Лучшие предложения для путешествий</h2>
 		<form>
 			<label></label>
 			<input type="email" name="email" id="email" placeholder="Email*"/>
 			<button type="submit">&nbsp; Подписаться &nbsp;</button>
 		</form>
-	</section>
+	</div>
 </main>
 <footer>
 	<div class="top-images">
@@ -543,15 +541,11 @@
 			</li>
 		</ul>
 	</div>
-	<div class="images">
-		<div></div>
-		<img src="img/assets/ttn.png" alt="TTN логотип" width="100px">
-	</div>
-	<div style="box-sizing: border-box; border: solid black;
-    background-color: yellow; width: 100px">
-		Партнерская программа
-	</div>
 	<div class="low-images">
+		<div> Партнерская программа</div>
+		<div>
+			<img src="img/assets/ttn.png" alt="TTN логотип" width="100px">
+		</div>
 		<div>
 			<img src="img/assets/google-play-store.svg" alt="Google-play логотип" width="150px">
 		</div>

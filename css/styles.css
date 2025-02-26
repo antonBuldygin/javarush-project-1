@@ -423,6 +423,8 @@ td, th {text-align: left;
 #manage div { flex-shrink: 0;flex-basis: auto;flex-grow: 1}
 .manage_img {width: 50%; border: 1px solid darkgray; height: 60px;
       background-color: palevioletred; }
+.manage_img:hover {width: 45%; border: 1px solid red; height: 60px;
+      background-color: #ef6363; }
 .manage_img a {color: pink; justify-content: left}
 .manage_text {display: flex;flex-wrap: wrap;flex-direction: row;text-align: left;width: 100%;}
 .manage_text div::before {content: "✓";color: green}

@@ -152,3 +152,16 @@ input_babies.onfocus = () => {
         max_value - adults - children
     );
 }
+
+const datato = document.getElementById('datato')
+console.log(datato.value);
+
+document.getElementById('datato').onchange = function () {
+    var input = document.getElementById("datafrom");
+    input.setAttribute("min", this.value);
+}
+
+document.getElementById('datafrom').onchange = function () {
+    var input = document.getElementById("datato");
+    input.setAttribute("max", this.value);
+}

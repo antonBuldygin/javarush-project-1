@@ -89,13 +89,66 @@ var listTo = document.getElementById('city-to');
 cities.forEach(function (item) {
     var option = document.createElement('option');
     option.value = item;
-
     listTo.appendChild(option);
 });
 cities.forEach(function (item) {
                    var option = document.createElement('option');
                    option.value = item;
                    listFrom.appendChild(option);
-
                }
 );
+var max_value = 9;
+const dialog = document.querySelector("dialog");
+console.log(dialog);
+const showButton = document.querySelector("dialog + button");
+const closeButton = document.querySelector("dialog button");
+// "Show the dialog" button opens the dialog modally
+showButton.addEventListener(
+    "click",
+    () => {
+        max_value = 9;
+        dialog.showModal();
+    }
+);
+// "Close" button closes the dialog
+closeButton.addEventListener(
+    "click",
+    () => {
+        dialog.close();
+        var input = document.getElementById("adults");
+        input.setAttribute(
+            "max",
+            max_value
+        );
+    }
+);
+let input = document.getElementById("adults");
+let input_children = document.getElementById("children");
+let input_babies = document.getElementById("babies");
+input.onfocus = () => {
+    let children = parseFloat(input_children.value) || '';
+    let babies = parseFloat(input_babies.value) || '';
+    console.log("max_value" + max_value);
+    input.setAttribute(
+        "max",
+        max_value - children - babies
+    );
+}
+input_children.onfocus = () => {
+    let adults = parseFloat(input.value) || '';
+    let babies = parseFloat(input_babies.value) || '';
+    console.log("max_value" + max_value);
+    input_children.setAttribute(
+        "max",
+        max_value - adults - babies
+    );
+}
+input_babies.onfocus = () => {
+    let adults = parseFloat(input.value) || '';
+    let children = parseFloat(input_children.value) || '';
+    console.log("max_value" + max_value);
+    input_babies.setAttribute(
+        "max",
+        max_value - adults - children
+    );
+}

@@ -137,34 +137,34 @@
 						<label for="city-to">Куда</label>
 						<input list="city-to" name="city-to" id="cities_to">
 						<datalist id="city-to" name="city-from-chosen">
-<!--							<option>-->
-<!--								<p>Ближайшие аэропорты</p>-->
-<!--								<ul>-->
-<!--									<li>Кишинев</li>-->
-<!--									<li>Балице</li>-->
-<!--								</ul>-->
-<!--							</option>-->
-<!--							<option>-->
-<!--								<p>Ближайшие аэропорты</p>-->
-<!--								<ul>-->
-<!--									<li>Кишинев</li>-->
-<!--									<li>Балице</li>-->
-<!--								</ul>-->
-<!--							</option>-->
-<!--							<option>-->
-<!--								<p>Ближайшие аэропорты</p>-->
-<!--								<ul>-->
-<!--									<li>Кишинев</li>-->
-<!--									<li>Балице</li>-->
-<!--								</ul>-->
-<!--							</option>-->
-<!--							<option>-->
-<!--								<p>Ближайшие аэропорты</p>-->
-<!--								<ul>-->
-<!--									<li>Кишинев</li>-->
-<!--									<li>Балице</li>-->
-<!--								</ul>-->
-<!--							</option>-->
+							<!--							<option>-->
+							<!--								<p>Ближайшие аэропорты</p>-->
+							<!--								<ul>-->
+							<!--									<li>Кишинев</li>-->
+							<!--									<li>Балице</li>-->
+							<!--								</ul>-->
+							<!--							</option>-->
+							<!--							<option>-->
+							<!--								<p>Ближайшие аэропорты</p>-->
+							<!--								<ul>-->
+							<!--									<li>Кишинев</li>-->
+							<!--									<li>Балице</li>-->
+							<!--								</ul>-->
+							<!--							</option>-->
+							<!--							<option>-->
+							<!--								<p>Ближайшие аэропорты</p>-->
+							<!--								<ul>-->
+							<!--									<li>Кишинев</li>-->
+							<!--									<li>Балице</li>-->
+							<!--								</ul>-->
+							<!--							</option>-->
+							<!--							<option>-->
+							<!--								<p>Ближайшие аэропорты</p>-->
+							<!--								<ul>-->
+							<!--									<li>Кишинев</li>-->
+							<!--									<li>Балице</li>-->
+							<!--								</ul>-->
+							<!--							</option>-->
 						</datalist>
 					</div>
 					<div class="data-to-menu">
@@ -176,24 +176,32 @@
 						<input type="date" name="datafrom" min="2024-06-01" max="2025-08-31" id="datafrom"/>
 					</div>
 					<div class="passenger-menu">
-						<button autofocus class='passengers-button'>Пассажиры, Класс</button>
 						<dialog>
 							<p>Пассажиры, Класс </p>
 							<p>Максимум 9 пассажиров </p>
 							<label for="adults">Взрослые <span>старше 12 лет</span></label>
-							<input type="number" id="adults" name="adults" min="1" max="9"/>
+							<input type="number" id="adults" name="adults" min="0" max="9"/>
 							<label for="children">Дети <span>2-12 лет</span></label>
-							<input type="number" id="children" name="children" min="1" max="9"/>
+							<input type="number" id="children" name="children" min="0" max="9"/>
 							<label for="babies">Младенцы <span>до 2 лет</span></label>
-							<input type="number" id="babies" name="babies" min="1" max="9"/>
+							<input type="number" id="babies" name="babies" min="0" max="9"/>
 							<input type="radio" id="anytype" name="ticketclass" value="anytype" checked>
 							<label for="anytype">Любой</label>
 							<input type="radio" id="business" name="ticketclass" value="business">
 							<label for="business">Бизнес</label>
 							<input type="radio" id="econom" name="ticketclass" value="econom">
 							<label for="business">Эконом</label>
-							<button autofocus>OK</button>
+							<button>OK</button>
 						</dialog>
+						<button>Пассажиры, Класс</button>
+					</div>
+					<div class='fee'>
+						<div class='container'>
+							<div class='title'>
+								<h2></h2>
+								<p></p>
+							</div>
+						</div>
 					</div>
 					<input type="submit" value="Найти" class="find">
 				</fieldset>

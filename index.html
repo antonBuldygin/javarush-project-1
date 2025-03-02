@@ -180,11 +180,11 @@
 							<p>Пассажиры, Класс </p>
 							<p>Максимум 9 пассажиров </p>
 							<label for="adults">Взрослые <span>старше 12 лет</span></label>
-							<input type="number" id="adults" name="adults" min="0" max="9"/>
+							<input type="number" id="adults" name="adults" min="0" max="9" value='0'/>
 							<label for="children">Дети <span>2-12 лет</span></label>
-							<input type="number" id="children" name="children" min="0" max="9"/>
+							<input type="number" id="children" name="children" min="0" max="9" value='0'/>
 							<label for="babies">Младенцы <span>до 2 лет</span></label>
-							<input type="number" id="babies" name="babies" min="0" max="9"/>
+							<input type="number" id="babies" name="babies" min="0" max="9" value='0'/>
 							<input type="radio" id="anytype" name="ticketclass" value="anytype" checked>
 							<label for="anytype">Любой</label>
 							<input type="radio" id="business" name="ticketclass" value="business">
@@ -240,6 +240,7 @@
 	<div id="destinations">
 		<div><h2>Популярные направления</h2></div>
 		<div class='text'>
+			<div class="posts"></div>
 			<div>Варшава -> Милан <span>от 771€ </span></div>
 			<div>Варшава -> Лондон <span>от 1200€ </span></div>
 			<div>Варшава -> Мадрид <span> от 2771€ </span></div>
@@ -416,6 +417,11 @@
 			<button type="submit">Подписаться</button>
 		</form>
 	</div>
+<!--	<template id="destinations-template">-->
+<!--		<div class="post">-->
+<!--			<p class="origin"></p>-->
+<!--		</div>-->
+<!--	</template>-->
 </main>
 <footer>
 	<div class="top-images">

@@ -167,3 +167,74 @@ document.getElementById('datafrom').onchange = function () {
     input.setAttribute("max", this.value);
     console.log(input.value);
 }
+{
+    const container = document.querySelector(".posts");
+    const template = document.querySelector("#destinations-template")
+        .content
+        .querySelector(".post");
+    let count = 1
+
+    function renderNews(news) {
+        if (news.length === 0) {
+            container.innerHTML = `<p style="color: #ccc">Данных нет.</p>`;
+        }
+        const newsElements = news.map((n) => {
+            const newsElement = template.cloneNode(true);
+            newsElement.querySelector(".origin").textContent
+                = `${count++}. Дата вылета ${new Date(n.departureDate)
+                .toLocaleDateString("ru-RU")},   ${n.origin} -> ${n.destination}  Цена ${n.price.total} Евро` ;
+            return newsElement;
+        });
+        const fragmentContainer = document.createDocumentFragment();
+        newsElements.forEach((ne) => {
+            console.log(ne);
+            fragmentContainer.append(ne);
+        });
+        container.append(fragmentContainer);
+    }
+}
+let accessToken;
+const newsRequest = fetch(
+    `https://test.api.amadeus.com/v1/security/oauth2/token`,
+    {
+        method: "POST",
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams({
+                                      grant_type: "client_credentials",
+                                      client_id:
+                                          "i5pjcyIK6WDn1uLPqa3m5RpZ5OlZPhPj",
+                                      client_secret: "VUdag1mvVUPPCd82"
+                                  })
+    }
+)
+    //              Второй способ распарсить JSON — воспользоваться
+    //              методом json() у объекта Response
+    .then((resp) => resp.json())
+    .then((data) => {
+        accessToken = data.access_token;
+        console.log(accessToken)
+        let param = {origin: 'PAR', maxPrice: '200'};
+        (async () => {
+            const response = await fetch(
+                'https://test.api.amadeus.com/v1/shopping/flight-destinations?' +
+                new URLSearchParams({
+                                        origin: 'PAR',
+                                        maxPrice: '200'
+                                        // , destination:''
+                                    }),
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + accessToken
+                    }
+                }
+            )
+            const data = await response.json()
+            console.log(JSON.stringify(data.data[0]))
+            console.log(JSON.stringify(data.data[0].origin))
+            console.log(JSON.stringify(data.data[0].destination))
+            console.log(JSON.stringify(data.data[0].departureDate))
+            console.log(JSON.stringify(data.data[0].price.total))
+            renderNews(data.data)
+        })()
+    });

@@ -70,7 +70,7 @@ main #destinations .text {background-color: #FFFFFF; text-align: left;
 	/*height: 50%;*/
 	}
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1000px) {
 	main #destinations .text {background-color: #FFFFFF; text-align: left;
 		/*width: 100%;*/
 		padding-left: 10px;

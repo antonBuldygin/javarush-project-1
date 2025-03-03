@@ -70,6 +70,33 @@ main #destinations .text {background-color: #FFFFFF; text-align: left;
 	/*height: 50%;*/
 	}
 
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+	}
+
+#destinations, #manage {
+	animation: fadeIn 5s ease forwards;
+	}
+
+#manage:hover {
+	animation: scaleUp 1s ease;
+	}
+
+@keyframes scaleUp {
+	0% {
+		transform: scale(1.0);
+		}
+	
+	50% {
+		transform: scale(1.2);
+		}
+	
+	100% {
+		transform: scale(1.0);
+		}
+	}
+
 @media (min-width: 320px) and (max-width: 1000px) {
 	main #destinations .text {background-color: #FFFFFF; text-align: left;
 		/*width: 100%;*/
@@ -253,6 +280,11 @@ main #destinations .text div { text-align: justify;
 	/*div { flex-shrink: 1;flex-grow: 2}*/
 	}
 
+.origin:hover { text-align: justify;
+	/*div { flex-shrink: 1;flex-grow: 2}*/
+	animation: scaleUp 1s ease;
+	}
+
 main #destinations h2 { text-align: left;
 	}
 
@@ -293,6 +325,15 @@ main #hot-tickets .text p {
 main #faq .text { background-color: #FFFFFF; text-align: left;
 	padding-left: 10px;}
 
+main #faq .text ul { list-style-type: none; /* Убирает буллиты */
+	}
+
+main #faq .text a {
+	color: #1690f5}
+
+main #faq .text li:hover { animation: scaleUp 1s  forwards;
+	color: #1690f5}
+
 main#faq {width: 35%;margin-right: 5px;}
 
 main #proposals {width: 50%; margin-right: 15%;
@@ -319,6 +360,11 @@ footer ul {
 	display: flex;
 	flex-wrap: wrap;
 	}
+.footer-content li:hover { animation: scaleUp 1s;
+	display: flex;
+	flex-wrap: wrap;
+	}
+
 
 .low-images {
 	width: 90%;
@@ -379,6 +425,14 @@ footer ul {
 	color: #FFFFFF;
 	}
 
+#header .find:hover {
+	background-color: #FF4D4D;
+	border: #FFFFFF;
+	font-size: 13px;
+	color: #FFFFFF;
+	animation: scaleUp 1s ease;
+	box-shadow: 10px 4px 10px 3px #888;}
+
 #header .navmenu a {
 	color: #FFFFFF
 	}
@@ -419,6 +473,15 @@ td, th {text-align: left;
 	height: 10%;
 	width: 20%;
 	background-color: darkgray;
+	}
+
+#header .city-from-menu:hover, .city-to-menu:hover, .data-to-menu:hover, .data-from-menu:hover, .passenger-menu:hover {
+	/*flex: 1 1 calc(33.333% - 20px);*/
+	height: 10%;
+	width: 20%;
+	background-color: darkgray;
+	animation: scaleUp 1s ease;;
+	
 	}
 
 #header #cities, #cities_to {
@@ -556,3 +619,5 @@ main #proposals button {height: 30px; width: 40px;
 	);
 	opacity: 0.75;
 	}
+
+.star::before {content: url(" /img/assets/star.svg"); color: red; padding: 10px;}

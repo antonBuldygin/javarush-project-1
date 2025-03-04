@@ -156,13 +156,13 @@ input_babies.onfocus = () => {
 // const datato = document.getElementById('datato')
 // console.log(datato.value);
 
-document.getElementById('datato').onchange = function () {
+document.getElementById('data-to').onchange = function () {
     var input = document.getElementById("datafrom");
     input.setAttribute("min", this.value);
     console.log(input.value);
 }
 
-document.getElementById('datafrom').onchange = function () {
+document.getElementById('data-from').onchange = function () {
     var input = document.getElementById("datato");
     input.setAttribute("max", this.value);
     console.log(input.value);
@@ -238,3 +238,6 @@ const newsRequest = fetch(
             renderNews(data.data)
         })()
     });
+
+document.getElementById('data-to').valueAsDate = new Date();
+document.getElementById('data-from').valueAsDate = new Date();

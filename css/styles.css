@@ -8,7 +8,7 @@ body {
 div {
 	text-align: center;
 	box-sizing: border-box;
-	/*border: solid 1px red;*/
+	/* border: solid 1px red; */
 	margin: 5px;
 	padding: 5px;
 	border-radius: 5px;
@@ -108,6 +108,16 @@ main #destinations .text {background-color: #FFFFFF; text-align: left;
 		font-size: 9px;
 		}
 	
+	#header .find {
+		background-color: black;
+		border: solid 10px #FF4D4D;
+		border-radius: 10px;
+		font-size: 13px;
+		color: #FFFFFF;
+		width: 0%;
+		
+		}
+	
 	body {
 		padding: 20px;
 		}
@@ -158,7 +168,10 @@ main #destinations .text {background-color: #FFFFFF; text-align: left;
 	
 	#header #search-form fieldset {
 		display: flex;
-		/*width: 95%;*/
+		flex-wrap:nowrap;
+		justify-content: space-evenly;
+		
+		width: 95%;
 		color: darkgray;
 		background-color: #FFFFFF;
 		flex-direction: column;
@@ -331,7 +344,7 @@ main #faq .text ul { list-style-type: none; /* Убирает буллиты */
 main #faq .text a {
 	color: #1690f5}
 
-main #faq .text li:hover { animation: scaleUp 1s  forwards;
+main #faq .text li:hover { animation: scaleUp 1s forwards;
 	color: #1690f5}
 
 main#faq {width: 35%;margin-right: 5px;}
@@ -360,11 +373,11 @@ footer ul {
 	display: flex;
 	flex-wrap: wrap;
 	}
+
 .footer-content li:hover { animation: scaleUp 1s;
 	display: flex;
 	flex-wrap: wrap;
 	}
-
 
 .low-images {
 	width: 90%;
@@ -420,9 +433,12 @@ footer ul {
 
 #header .find {
 	background-color: #FF4D4D;
-	border: #FFFFFF;
+	border: solid 1px #FF4D4D;
+	border-radius: 10px;
 	font-size: 13px;
 	color: #FFFFFF;
+	width: 10%;
+	
 	}
 
 #header .find:hover {
@@ -466,33 +482,40 @@ td, th {text-align: left;
 	width: 95%;
 	color: darkgray;
 	background-color: #FFFFFF;
+	border-radius: 10px;
 	}
 
-#header .city-from-menu, .city-to-menu, .data-to-menu, .data-from-menu, .passenger-menu {
-	/*flex: 1 1 calc(33.333% - 20px);*/
-	height: 10%;
-	width: 20%;
-	background-color: darkgray;
+#header .city-from-menu, .city-to-menu, .data-to-menu, .data-from-menu, .passenger-menu, .find {
+	flex: 1 1 calc(33.333% - 20px);
+	/* align-items: baseline; */
+	align-content: stretch;
+	/* height: 0%; */
+	/* width: 20%; */
+	background-color: white;
 	}
+#header .city-from-menu{justify-content: right;}
+label {font-size: 16px}
 
 #header .city-from-menu:hover, .city-to-menu:hover, .data-to-menu:hover, .data-from-menu:hover, .passenger-menu:hover {
 	/*flex: 1 1 calc(33.333% - 20px);*/
-	height: 10%;
-	width: 20%;
+	/* height: 10%; */
+	/* width: 20%; */
 	background-color: darkgray;
 	animation: scaleUp 1s ease;;
 	
 	}
 
 #header #cities, #cities_to {
-	width: 60%;
+	color: black;
+	border: solid 1px white;
+	font-weight: bold;
 	}
 
-.passengers-button {
-	color: darkgray;
-	background-color: #FFFFFF;
-	border: #FFFFFF;
-	}
+/* .button { */
+/* 	color: white; */
+/* 	background-color: #FFFFFF; */
+/* 	border: #FFFFFF; */
+/* 	} */
 
 #header ul li {
 	display: inline-block;

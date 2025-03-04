@@ -100,8 +100,8 @@
 			<form id="form1" method="get" action="#">
 				<fieldset>
 					<div class="city-from-menu">
-						<label for="city-from">Откуда</label>
-						<input list="city-from" name="city-from" id="cities">
+						<label for="cities">Откуда</label>
+						<input list="city-from" name="city-from" id="cities" value="Аксай" style='text-align: center'>
 						<datalist id="city-from" name="city-from-chosen">
 							<!--							<option>Варшава-->
 							<!--								<p>Ближайшие аэропорты</p>-->
@@ -134,8 +134,9 @@
 						</datalist>
 					</div>
 					<div class="city-to-menu">
-						<label for="city-to">Куда</label>
-						<input list="city-to" name="city-to" id="cities_to">
+						<label for="cities_to">Куда</label>
+						<input list="city-to" name="city-to" id="cities_to" value='Азнакаево'
+							   style='text-align: center'>
 						<datalist id="city-to" name="city-from-chosen">
 							<!--							<option>-->
 							<!--								<p>Ближайшие аэропорты</p>-->
@@ -167,42 +168,75 @@
 							<!--							</option>-->
 						</datalist>
 					</div>
-					<div class="data-to-menu">
-						<label for="datato">Туда</label>
-						<input type="date" name="data-to" min="2024-06-01" max="2025-08-31" id="datato"/>
+					<div class="data-to-menu" style='display: flex; flex-direction: column; justify-content: center'>
+						<label for="data-to" style='margin:0% '>Туда</label>
+						<input type="date" name="data-from" min="2024-06-01" max="2025-08-31" id="data-to"
+							   style='border:solid 1px white; margin: 10%; font-size: 16px '/>
 					</div>
-					<div class="data-from-menu">
-						<label for="datafrom">Обратно</label>
-						<input type="date" name="datafrom" min="2024-06-01" max="2025-08-31" id="datafrom"/>
+					<div class="data-from-menu" style='display: flex; flex-direction: column; justify-content: center'>
+						<label for="data-from" style='margin: 0%'>Обратно</label>
+						<input type="date" name="data-from" min="2024-06-01" max="2025-08-31" id="data-from"
+							   style='border:solid 1px white; margin: 10%; font-size: 16px '/>
 					</div>
-					<div class="passenger-menu">
-						<dialog>
-							<p>Пассажиры, Класс </p>
-							<p>Максимум 9 пассажиров </p>
-							<label for="adults">Взрослые <span>старше 12 лет</span></label>
-							<input type="number" id="adults" name="adults" min="0" max="9"/>
-							<label for="children">Дети <span>2-12 лет</span></label>
-							<input type="number" id="children" name="children" min="0" max="9"/>
-							<label for="babies">Младенцы <span>до 2 лет</span></label>
-							<input type="number" id="babies" name="babies" min="0" max="9"/>
-							<input type="radio" id="anytype" name="ticketclass" value="anytype" checked>
-							<label for="anytype">Любой</label>
-							<input type="radio" id="business" name="ticketclass" value="business">
-							<label for="business">Бизнес</label>
-							<input type="radio" id="econom" name="ticketclass" value="econom">
-							<label for="business">Эконом</label>
-							<button>OK</button>
-						</dialog>
-						<button>Пассажиры, Класс</button>
-					</div>
-					<div class='fee'>
-						<div class='container'>
-							<div class='title'>
-								<h2></h2>
-								<p></p>
+					<div class="passenger-menu" style='display: flex; width: 100%; justify-content: start'>
+						<dialog style='width: 100%; height: 100%; border: #FAFAFA;padding: 0px'>
+							<div style='display: flex; width: 100%; height: 80%  ;
+							justify-content: center; flex-direction: column;margin: 0'>
+								<div  style='height: 5%;width: 100%; right: 0px;
+									   text-align: center; font-size: 16px;margin-bottom: 55px;font-weight: 900;
+									   text-transform: uppercase;'>Пассажиры, Класс </div>
+								<div style='height: 5%;width: 100%; right: 0px;
+									   text-align: center; font-size: 16px;margin-bottom: 100px'>Максимум 9 пассажиров
+								</div>
+								<label for="adults" style='height: 8%;width: 20%; right: 0px;
+									   text-align: center;margin-left: 40%; font-size: 16px'>Взрослые <span>старше 12 лет</span></label>
+								<input type="number" id="adults" name="adults" min="0" max="9" value='0'
+									   style='height: 8%;width: 20%; right: 0px;
+									   text-align: center;margin-left: 40%; font-size: 16px'/>
+								<label for="children" style='height: 8%;width: 20%; right: 0px;
+									   text-align: center;margin-left: 40%; font-size: 16px'>Дети <span>2-12 лет</span></label>
+								<input type="number" id="children" name="children" min="0" max="9" value='0'
+									   style='height: 8%;width: 20%; right: 0px; align-content: center;
+									   text-align: center;margin-left: 40%;font-size: 16px'/>
+								<label for="babies" style='height: 8%;width: 20%; right: 0px;
+									   text-align: center;margin-left: 40%; font-size: 16px'>Младенцы <span>до 2 лет</span></label>
+								<input type="number" id="babies" name="babies" min="0" max="9" value='0'
+									   style='height: 8%;width: 20%; text-align: center;margin-left: 40%;
+										font-size: 16px'/>
 							</div>
-						</div>
+							<div style='display: flex;
+							justify-content: center; '>
+								<div style='padding: 0px'>
+									<input type="radio" id="anytype" name="ticketclass" value="anytype" checked>
+									<label for="anytype">Любой</label>
+								</div>
+								<div>
+									<input type="radio" id="business" name="ticketclass" value="business">
+									<label for="business">Бизнес</label>
+								</div>
+								<div>
+									<input type="radio" id="econom" name="ticketclass" value="econom">
+									<label for="business">Эконом</label>
+								</div>
+							</div>
+							<button style='display: flex; width: 90%; justify-content: center;background-color:
+							#FF4D4D; border: solid 1px #FF4D4D;margin-left: 5%;
+							height:60px; color: #FAFAFA; font-weight: 900; box-sizing: border-box;
+    						align-items: center;'> OK
+							</button>
+						</dialog>
+						<button style='width: 100%; justify-content: center;background-color: white; border: #FAFAFA;color: darkgray;'>
+							Пассажиры, Класс
+						</button>
 					</div>
+					<!--					<div class='fee'>-->
+					<!--						<div class='container'>-->
+					<!--							<div class='title'>-->
+					<!--								<h2></h2>-->
+					<!--								<p></p>-->
+					<!--							</div>-->
+					<!--						</div>-->
+					<!--					</div>-->
 					<input type="submit" value="Найти" class="find">
 				</fieldset>
 			</form>
@@ -239,20 +273,19 @@
 	</div>
 	<div id="destinations">
 		<div><h2>Популярные направления</h2></div>
-
 		<div class='text'>
-		<div class="posts"></div>
-<!--			<div>Варшава -> Милан <span>от 771€ </span></div>-->
-<!--			<div>Варшава -> Лондон <span>от 1200€ </span></div>-->
-<!--			<div>Варшава -> Мадрид <span> от 2771€ </span></div>-->
-<!--			<div>Варшава -> Барселона <span> от 371€ </span></div>-->
-<!--			<div>Варшава -> Амстердам <span>от 1771€  </span></div>-->
-<!--			<div>Варшава -> Лиссабон <span> от 710€ </span></div>-->
-<!--			<div>Варшава -> Париж <span>от 571€  </span></div>-->
-<!--			<div>Варшава -> Нью-Йорк <span> от 3271€ </span></div>-->
-<!--			<div>Варшава -> Дейли <span> от 510€ </span></div>-->
-<!--			<div>Варшава -> Москва <span> от 1771€ </span></div>-->
-<!--			<div>Варшава -> Аликанте <span> от 3771€ </span></div>-->
+			<div class="posts"></div>
+			<!--			<div>Варшава -> Милан <span>от 771€ </span></div>-->
+			<!--			<div>Варшава -> Лондон <span>от 1200€ </span></div>-->
+			<!--			<div>Варшава -> Мадрид <span> от 2771€ </span></div>-->
+			<!--			<div>Варшава -> Барселона <span> от 371€ </span></div>-->
+			<!--			<div>Варшава -> Амстердам <span>от 1771€  </span></div>-->
+			<!--			<div>Варшава -> Лиссабон <span> от 710€ </span></div>-->
+			<!--			<div>Варшава -> Париж <span>от 571€  </span></div>-->
+			<!--			<div>Варшава -> Нью-Йорк <span> от 3271€ </span></div>-->
+			<!--			<div>Варшава -> Дейли <span> от 510€ </span></div>-->
+			<!--			<div>Варшава -> Москва <span> от 1771€ </span></div>-->
+			<!--			<div>Варшава -> Аликанте <span> от 3771€ </span></div>-->
 		</div>
 	</div>
 	<div id="top-10-airlines">

@@ -643,4 +643,4 @@ main #proposals button {height: 30px; width: 40px;
 	opacity: 0.75;
 	}
 
-.star::before {content: url(" /img/assets/star.svg"); color: red; padding: 10px;}
+.star::before {content: url("../img/assets/star.svg"); color: red; padding: 10px;}

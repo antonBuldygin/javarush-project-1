@@ -157,13 +157,13 @@ input_babies.onfocus = () => {
 // console.log(datato.value);
 
 document.getElementById('data-to').onchange = function () {
-    var input = document.getElementById("datafrom");
+    var input = document.getElementById("data-from");
     input.setAttribute("min", this.value);
     console.log(input.value);
 }
 
 document.getElementById('data-from').onchange = function () {
-    var input = document.getElementById("datato");
+    var input = document.getElementById("data-to");
     input.setAttribute("max", this.value);
     console.log(input.value);
 }

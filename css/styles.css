@@ -5,15 +5,15 @@ body {
 	font-family: "Roboto", "Inter", sans-serif;
 	}
 
-div {
-	text-align: center;
-	box-sizing: border-box;
-	/* border: solid 1px red; */
-	margin: 5px;
-	padding: 5px;
-	border-radius: 5px;
-	font-size: 16px;
-	}
+/* div { */
+/* 	text-align: center; */
+/* 	box-sizing: border-box; */
+/* 	!* border: solid 1px red; *! */
+/* 	margin: 5px; */
+/* 	padding: 5px; */
+/* 	border-radius: 5px; */
+/* 	font-size: 16px; */
+/* 	} */
 
 a {
 	color: #000;
@@ -21,54 +21,16 @@ a {
 	cursor: cell;
 	}
 
-main {
-	display: flex;
-	background-color: lightgrey;
-	flex-wrap: wrap;
-	width: 100%;
-	/*justify-content: space-around;*/
-	/*justify-content: center;*/
-	/*justify-content: space-evenly;*/
-	}
 
-main div { flex-shrink: 1;flex-grow: 1}
 
 .menu_block h1 {
 	text-align: start;
 	/*margin-left: 80px;*/
 	}
 
-.menu_block, .top-menu { width: 100%;
-	margin-left: 0%;
-	}
 
-/*main div {*/
-/*    !*flex: 1 1 calc(33.333% - 20px);*!*/
-/*}*/
-main #manage {
-	background-color: #FFFFFF;
-	width: 35%;
-	margin-left: 3%;
-	}
 
-main #tickets {background-color: #FFFFFF;
-	width: 35%;
-	margin-right: 5%;
-	}
 
-main #destinations {
-	width: 35%;
-	margin-left: 3%;
-	/*      flex-shrink: 0;flex-basis: 30%;flex-grow: 2;*/
-	}
-
-main #destinations .text {background-color: #FFFFFF; text-align: left;
-	padding-left: 10px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	/*height: 50%;*/
-	}
 
 @keyframes fadeIn {
 	from { opacity: 0; transform: translateY(20px); }
@@ -187,19 +149,19 @@ main #destinations .text {background-color: #FFFFFF; text-align: left;
 	
 	#header .list_of_options div {flex-shrink: 1;flex-grow: 2}
 	
-	.top-menu {display: flex;
-		justify-content: flex-end;
-		align-self: flex-end;
-		flex-direction: column;
-		}
+	/* .top-menu {display: flex; */
+	/* 	justify-content: flex-end; */
+	/* 	align-self: flex-end; */
+	/* 	flex-direction: column; */
+	/* 	} */
 	
 	#best-tickets {font-size: 10px; text-align: left; margin-left: 0px}
 	
-	#language {width: 15%;}
+	/* #language {width: 15%;} */
 	
 	.menu {display: block;}
 	
-	#navv {display: none;}
+	/* #navv {display: none;} */
 	
 	.burger-checkbox {
 		position: absolute;
@@ -280,13 +242,380 @@ main #destinations .text {background-color: #FFFFFF; text-align: left;
 		}
 	
 	.menu-item:hover {
-		background: lightgrey;
+		/* background: lightgrey; */
 		color: #6E36F7;
 		}
 	
 	.burger-checkbox:checked ~ .menu-list {
 		transform: translateX(0);
 		}
+	}
+
+
+
+footer {
+	background-color: #FAFAFA;
+	}
+
+footer ul {
+	text-align: left;
+	list-style-type: none;
+	}
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+.footer-content li:hover { animation: scaleUp 1s;
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+.low-images {
+	width: 90%;
+	justify-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+.footer-content div { flex-shrink: 0;flex-basis: auto;flex-grow: 1}
+
+.top-images {
+	width: 90%;
+	justify-content: stretch; /* горизонтальное центрирование */
+	/*align-items: center; /*/
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+#header {
+	/*display: flex;*/
+	left: 0;
+	line-height: 3.5em;
+	top: 0;
+	width: 100%;
+	background-color: #6E36F7;
+	height: 100%;
+	
+	}
+
+#header .list_of_options {
+	display: flex;
+	flex-direction: row;
+	/*justify-content: flex-start; !* Распределение элементов с равными промежутками *!*/
+	padding: 10px;
+	flex-wrap: wrap;
+	}
+
+#best-tickets {width: 100%}
+
+.nav-item {
+	color: white;
+	/*text-decoration: none;*/
+	padding: 10px 20px;
+	/* background-color: #a182f6; */
+	border-radius: 15px;
+	}
+
+.nav-item:hover {
+	background-color: #FFFFFF;
+	color: black;
+	}
+
+/* .nav-item>a:hover { */
+/* 	background-color: #FFFFFF; */
+/* 	color: black; */
+/* 	} */
+
+/* #header .list_of_options a { */
+/* 	color: #FFFFFF; */
+/* 	} */
+
+#header .find {
+	background-color: #FF4D4D;
+	border: solid 1px #FF4D4D;
+	border-radius: 10px;
+	font-size: 13px;
+	color: #FFFFFF;
+	width: 10%;
+	
+	}
+
+#header .find:hover {
+	background-color: #FF4D4D;
+	border: #FFFFFF;
+	font-size: 13px;
+	color: #FFFFFF;
+	animation: scaleUp 1s ease;
+	box-shadow: 10px 4px 10px 3px #888;}
+
+/* #header .navmenu a { */
+/* 	color: #FFFFFF */
+/* 	} */
+
+/* .navmenu #language { */
+/* 	background-color: #6E36F7; */
+/* 	color: #FFFFFF */
+/* 	} */
+
+.menu_block  {
+	display: flex;
+	flex-direction: column;
+     align-content: center;
+     width: 80%;
+     box-sizing: border-box;
+	margin-left: 10px;
+	margin-right:  10px;
+}
+.menu_block h1 {
+	width: 80%;
+	color: hotpink;
+	height: 30px;
+	text-align: left;
+	}
+
+
+
+#header #search-form fieldset {
+	display: flex;
+	width: 95%;
+	/* color: darkgray; */
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	margin-top: 0px;
+	}
+
+#header .city-from-menu, .city-to-menu, .data-to-menu, .data-from-menu, .passenger-menu, .find {
+	flex: 1 1 calc(33.333% - 20px);
+	/* align-items: baseline; */
+	align-content: stretch;
+	/* height: 0%; */
+	/* width: 20%; */
+	background-color: white;
+	}
+#header .city-from-menu{justify-content: right;}
+/* label {font-size: 16px} */
+
+#header .city-from-menu:hover, .city-to-menu:hover, .data-to-menu:hover, .data-from-menu:hover, .passenger-menu:hover {
+	/*flex: 1 1 calc(33.333% - 20px);*/
+	/* height: 10%; */
+	/* width: 20%; */
+	/* background-color: darkgray; */
+	animation: scaleUp 1s ease;;
+	
+	}
+
+#header #cities, #cities_to {
+	color: black;
+	border: solid 1px white;
+	font-weight: bold;
+	}
+
+/* .button { */
+/* 	color: white; */
+/* 	background-color: #FFFFFF; */
+/* 	border: #FFFFFF; */
+/* 	} */
+
+#header ul li {
+	display: inline-block;
+	padding: 5px;
+	/*margin: 5px;*/
+	height: 10%;
+	}
+
+/* #header ul li:hover { */
+/* 	!* background-color: #a182f6; *! */
+/* 	} */
+
+
+/* footer */
+.partners-programm {color: rgba(7, 7, 245, 0.84);
+	border: solid 1px rgba(7, 7, 245, 0.84);
+	text-align: center;
+	padding: 14px;
+	height: 50px;
+	border-radius: 5px;
+	/*vertical-align: middle;*/
+	}
+
+
+
+/*| Navigation |*/
+#navv {
+	/*background: #334; !* Задаем основной фон меню *!*/
+	display: flex;
+	justify-content: stretch;
+	align-items: baseline;
+	padding: 0 3%; /* Задаем внутренние отступы */
+	float: right;
+	margin-right: 100px;
+	}
+
+#navv ul {
+	list-style: none; /* Убираем маркер для элементов списка */
+	}
+
+#navv ul li {
+	/* background: #a182f6; */
+	display: inline-block; /*Выстраиваем пункты меню в ряд по горизонтали */
+	border-radius: 15px;
+	height: 40px;
+	}
+
+#navv ul li a {
+	/* display: inline-flex; !* Настраиваем оформление пунктов меню *! */
+	/* align-items: flex-start; */
+	/*padding: 1px 10px;*/
+	font-size: .9em;
+	color: #FFFFFF;
+	/*letter-spacing: 1px;*/
+	/*text-decoration: none;*/
+	/*text-transform: uppercase;*/
+	/*border-top: 1px solid #445;*/
+	height: 30px;
+	}
+
+/* #navv ul li:hover { */
+/* 	background: #FFFFFF; */
+/* 	!* color: black;!* Меняем фон пункта меню при наведении указателя мыши *! *! */
+/* 	height: 30px; */
+/* 	} */
+#navv ul li a:hover {
+	box-sizing: border-box;
+	padding: 5px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	color: black;/* Меняем фон пункта меню при наведении указателя мыши */
+	height: 100px;
+	}
+
+#navv ul li ul {
+	display: none; /* Прячем пункты выпадающего блока меню */
+	position: absolute;
+	text-align: left;
+	background: #6E36F7; /* Задаем фон выпадающего блока меню */
+	}
+
+/* #navv ul li ul:hover { */
+/* 	!* display: none; !* Прячем пункты выпадающего блока меню *! *! */
+/* 	position: absolute; */
+/* 	background: #a182f6; !* Задаем фон выпадающего блока меню *! */
+/* 	} */
+
+#navv ul li:hover ul {
+	display: block; /* Отображаем подменю при наведении мыши */
+	}
+
+#navv ul li ul li {
+	display: block; /* Выстраиваем по вертикали пункты выпадающего меню */
+	}
+
+/* .top-menu {display: flex; */
+/* 	justify-content: flex-end; */
+/* 	align-self: flex-end; */
+/* 	} */
+
+#language {margin-left: 20px; padding-left: 40px; background-color: #6E36F7; color: #FFFFFF; border: 0; }
+
+
+
+
+/* MAIN */
+/* #manage div { flex-shrink: 0;flex-basis: auto;flex-grow: 1} */
+
+/* .manage_img {width: 50%; border: 1px solid darkgray; height: 60px; */
+/* 	background-color: palevioletred; } */
+
+/* .manage_img:hover {width: 45%; border: 1px solid red; height: 60px; */
+/* 	background-color: #ef6363; } */
+
+/* .manage_img a {color: pink; justify-content: left} */
+
+/* .manage_text {display: flex;flex-wrap: wrap;flex-direction: row;text-align: left;width: 100%;} */
+
+.manage_text div::before {content: "✓";color: green}
+
+#manage h2 {text-align: left; }
+
+#manage ul { list-style-type: none;}
+
+#manage .container {display: flex;flex-wrap: wrap;flex-direction: row;justify-content: stretch}
+
+#tickets h2 {text-align: left; }
+
+#tickets ul { list-style-type: none;}
+
+#tickets .container {display: flex;flex-wrap: wrap;flex-direction: row; justify-content: stretch}
+
+#proposals {display: flex;flex-wrap: wrap;flex-direction: row; justify-content: left}
+
+main #proposals .text {width: 100px;}
+
+main #proposals .email input {height: 30px; margin-left: 10px;background-color: #FFFFFF; border-radius: 2px;border: 1px solid}
+
+main #proposals input {color: #FF4D4D}
+
+main #proposals button {height: 30px; width: 40px;
+	margin-left: 10px;color: transparent;
+	background-color: #FF4D4D; border: none;}
+
+::backdrop {
+	background-image: linear-gradient(
+		    45deg,
+		    magenta,
+		    rebeccapurple,
+		    dodgerblue,
+		    green
+	);
+	opacity: 0.75;
+	}
+
+.star::before {content: url("star.svg"); color: red; padding: 10px;}
+
+
+main {
+	display: flex;
+	background-color: lightgrey;
+	flex-wrap: wrap;
+	width: 100%;
+	/*justify-content: space-around;*/
+	/*justify-content: center;*/
+	/*justify-content: space-evenly;*/
+	}
+
+main div { flex-shrink: 1;flex-grow: 1}
+
+/* .top-menu { width: 100%; */
+/* 	margin-left: 0%; */
+/* 	} */
+/*main div {*/
+/*    !*flex: 1 1 calc(33.333% - 20px);*!*/
+/*}*/
+main #manage {
+	background-color: #FFFFFF;
+	width: 35%;
+	margin-left: 3%;
+	}
+
+main #tickets {background-color: #FFFFFF;
+	width: 35%;
+	margin-right: 5%;
+	}
+
+main #destinations {
+	width: 35%;
+	margin-left: 3%;
+	/*      flex-shrink: 0;flex-basis: 30%;flex-grow: 2;*/
+	}
+
+main #destinations .text {background-color: #FFFFFF; text-align: left;
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/*height: 50%;*/
 	}
 
 main #destinations .text div { text-align: justify;
@@ -359,288 +688,3 @@ main #proposals {width: 50%; margin-right: 15%;
 	/*background-color: #ae90f5;*/
 	/*height: 200px;}*/
 	}
-
-footer {
-	background-color: #FAFAFA;
-	}
-
-footer ul {
-	text-align: left;
-	list-style-type: none;
-	}
-
-.footer-content {
-	display: flex;
-	flex-wrap: wrap;
-	}
-
-.footer-content li:hover { animation: scaleUp 1s;
-	display: flex;
-	flex-wrap: wrap;
-	}
-
-.low-images {
-	width: 90%;
-	justify-content: stretch;
-	display: flex;
-	flex-wrap: wrap;
-	}
-
-.footer-content div { flex-shrink: 0;flex-basis: auto;flex-grow: 1}
-
-.top-images {
-	width: 90%;
-	justify-content: stretch; /* горизонтальное центрирование */
-	/*align-items: center; /*/
-	display: flex;
-	flex-wrap: wrap;
-	}
-
-#header {
-	/*display: flex;*/
-	left: 0;
-	line-height: 3.5em;
-	top: 0;
-	width: 100%;
-	background-color: #6E36F7;
-	}
-
-#header .list_of_options {
-	display: flex;
-	flex-direction: row;
-	/*justify-content: flex-start; !* Распределение элементов с равными промежутками *!*/
-	padding: 10px;
-	flex-wrap: wrap;
-	}
-
-#best-tickets {width: 100%}
-
-.nav-item {
-	color: white;
-	/*text-decoration: none;*/
-	padding: 10px 20px;
-	background-color: #a182f6;
-	border-radius: 15px;
-	}
-
-.nav-item:hover {
-	background-color: #5e488d;
-	}
-
-#header .list_of_options a {
-	color: #FFFFFF;
-	}
-
-#header .find {
-	background-color: #FF4D4D;
-	border: solid 1px #FF4D4D;
-	border-radius: 10px;
-	font-size: 13px;
-	color: #FFFFFF;
-	width: 10%;
-	
-	}
-
-#header .find:hover {
-	background-color: #FF4D4D;
-	border: #FFFFFF;
-	font-size: 13px;
-	color: #FFFFFF;
-	animation: scaleUp 1s ease;
-	box-shadow: 10px 4px 10px 3px #888;}
-
-#header .navmenu a {
-	color: #FFFFFF
-	}
-
-.navmenu #language {
-	background-color: #6E36F7;
-	color: #FFFFFF
-	}
-
-/*.menu_block .links {*/
-/*      align-content: stretch;*/
-/*      width: 100%;*/
-/*      box-sizing: border-box;*/
-/*}*/
-.menu_block h1 {
-	width: 100%;
-	color: hotpink;
-	height: 30px;
-	}
-
-td {text-align: justify;
-	margin: 5%;
-	}
-
-td, th {text-align: left;
-	margin: 5%;
-	}
-
-#header #search-form fieldset {
-	display: flex;
-	width: 95%;
-	color: darkgray;
-	background-color: #FFFFFF;
-	border-radius: 10px;
-	}
-
-#header .city-from-menu, .city-to-menu, .data-to-menu, .data-from-menu, .passenger-menu, .find {
-	flex: 1 1 calc(33.333% - 20px);
-	/* align-items: baseline; */
-	align-content: stretch;
-	/* height: 0%; */
-	/* width: 20%; */
-	background-color: white;
-	}
-#header .city-from-menu{justify-content: right;}
-label {font-size: 16px}
-
-#header .city-from-menu:hover, .city-to-menu:hover, .data-to-menu:hover, .data-from-menu:hover, .passenger-menu:hover {
-	/*flex: 1 1 calc(33.333% - 20px);*/
-	/* height: 10%; */
-	/* width: 20%; */
-	background-color: darkgray;
-	animation: scaleUp 1s ease;;
-	
-	}
-
-#header #cities, #cities_to {
-	color: black;
-	border: solid 1px white;
-	font-weight: bold;
-	}
-
-/* .button { */
-/* 	color: white; */
-/* 	background-color: #FFFFFF; */
-/* 	border: #FFFFFF; */
-/* 	} */
-
-#header ul li {
-	display: inline-block;
-	padding: 5px;
-	/*margin: 5px;*/
-	height: 10%;
-	}
-
-#header ul li:hover {
-	background-color: #a182f6;
-	}
-
-.partners-programm {color: rgba(7, 7, 245, 0.84);
-	border: solid 1px rgba(7, 7, 245, 0.84);
-	text-align: center;
-	padding: 14px;
-	height: 50px;
-	border-radius: 5px;
-	/*vertical-align: middle;*/
-	}
-
-/*| Navigation |*/
-#navv {
-	/*background: #334; !* Задаем основной фон меню *!*/
-	padding: 0 3%; /* Задаем внутренние отступы */
-	float: right;
-	margin-right: 100px;
-	}
-
-#navv ul {
-	list-style: none; /* Убираем маркер для элементов списка */
-	}
-
-#navv ul li {
-	background: #a182f6;
-	display: inline-block; /*Выстраиваем пункты меню в ряд по горизонтали */
-	border-radius: 15px;
-	height: 40px;
-	}
-
-#navv ul li a {
-	display: inline-flex; /* Настраиваем оформление пунктов меню */
-	align-items: flex-start;
-	/*padding: 1px 10px;*/
-	font-size: .9em;
-	color: #FFFFFF;
-	/*letter-spacing: 1px;*/
-	/*text-decoration: none;*/
-	/*text-transform: uppercase;*/
-	/*border-top: 1px solid #445;*/
-	height: 30px;
-	}
-
-#navv ul li:hover {
-	background: #5e488d; /* Меняем фон пункта меню при наведении указателя мыши */
-	}
-
-#navv ul li ul {
-	display: none; /* Прячем пункты выпадающего блока меню */
-	position: absolute;
-	background: #a182f6; /* Задаем фон выпадающего блока меню */
-	}
-
-#navv ul li:hover ul {
-	display: block; /* Отображаем подменю при наведении мыши */
-	}
-
-#navv ul li ul li {
-	display: block; /* Выстраиваем по вертикали пункты выпадающего меню */
-	}
-
-.top-menu {display: flex;
-	justify-content: flex-end;
-	align-self: flex-end;
-	}
-
-#language {margin-top: 20px;height: 30px;}
-
-#manage div { flex-shrink: 0;flex-basis: auto;flex-grow: 1}
-
-.manage_img {width: 50%; border: 1px solid darkgray; height: 60px;
-	background-color: palevioletred; }
-
-.manage_img:hover {width: 45%; border: 1px solid red; height: 60px;
-	background-color: #ef6363; }
-
-.manage_img a {color: pink; justify-content: left}
-
-.manage_text {display: flex;flex-wrap: wrap;flex-direction: row;text-align: left;width: 100%;}
-
-.manage_text div::before {content: "✓";color: green}
-
-#manage h2 {text-align: left; }
-
-#manage ul { list-style-type: none;}
-
-#manage .container {display: flex;flex-wrap: wrap;flex-direction: row;justify-content: stretch}
-
-#tickets h2 {text-align: left; }
-
-#tickets ul { list-style-type: none;}
-
-#tickets .container {display: flex;flex-wrap: wrap;flex-direction: row; justify-content: stretch}
-
-#proposals {display: flex;flex-wrap: wrap;flex-direction: row; justify-content: left}
-
-main #proposals .text {width: 100px;}
-
-main #proposals .email input {height: 30px; margin-left: 10px;background-color: #FFFFFF; border-radius: 2px;border: 1px solid}
-
-main #proposals input {color: #FF4D4D}
-
-main #proposals button {height: 30px; width: 40px;
-	margin-left: 10px;color: transparent;
-	background-color: #FF4D4D; border: none;}
-
-::backdrop {
-	background-image: linear-gradient(
-		    45deg,
-		    magenta,
-		    rebeccapurple,
-		    dodgerblue,
-		    green
-	);
-	opacity: 0.75;
-	}
-
-.star::before {content: url("star.svg"); color: red; padding: 10px;}

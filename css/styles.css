@@ -1,11 +1,11 @@
 
 .menu {display: none;}
 
-body {
-	font-family: "Roboto", "Inter", sans-serif;
-	}
+/* body { */
+/* 	font-family: "Roboto", "Inter", sans-serif; */
+/* 	} */
 
-div {
+#header  div {
 	text-align: center;
 	box-sizing: border-box;
 	/*border: solid 1px red;*/
@@ -15,23 +15,33 @@ div {
 	font-size: 16px;
 	}
 
-a {
+ #footer div {
+	text-align: center;
+	box-sizing: border-box;
+	/*border: solid 1px red;*/
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	}
+
+#header a {
 	color: #000;
 	text-decoration: none;
 	cursor: cell;
 	}
 
-main {
-	display: flex;
-	background-color: lightgrey;
-	flex-wrap: wrap;
-	width: 100%;
-	/*justify-content: space-around;*/
-	/*justify-content: center;*/
-	/*justify-content: space-evenly;*/
-	}
+/* main { */
+/* 	display: flex; */
+/* 	background-color: lightgrey; */
+/* 	flex-wrap: wrap; */
+/* 	width: 100%; */
+/* 	!*justify-content: space-around;*! */
+/* 	!*justify-content: center;*! */
+/* 	!*justify-content: space-evenly;*! */
+/* 	} */
 
-main div { flex-shrink: 1;flex-grow: 1}
+/* main div { flex-shrink: 1;flex-grow: 1} */
 
 .menu_block h1 {
 	text-align: start;
@@ -45,30 +55,30 @@ main div { flex-shrink: 1;flex-grow: 1}
 /*main div {*/
 /*    !*flex: 1 1 calc(33.333% - 20px);*!*/
 /*}*/
-main #manage {
-	background-color: #FFFFFF;
-	width: 35%;
-	margin-left: 3%;
-	}
+/* main #manage { */
+/* 	background-color: #FFFFFF; */
+/* 	width: 35%; */
+/* 	margin-left: 3%; */
+/* 	} */
 
-main #tickets {background-color: #FFFFFF;
-	width: 35%;
-	margin-right: 5%;
-	}
+/* main #tickets {background-color: #FFFFFF; */
+/* 	width: 35%; */
+/* 	margin-right: 5%; */
+/* 	} */
 
-main #destinations {
-	width: 35%;
-	margin-left: 3%;
+/* main #destinations { */
+/* 	width: 35%; */
+/* 	margin-left: 3%; */
 	/*      flex-shrink: 0;flex-basis: 30%;flex-grow: 2;*/
-	}
+	/* } */
 
-main #destinations .text {background-color: #FFFFFF; text-align: left;
-	padding-left: 10px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	/*height: 50%;*/
-	}
+/* main #destinations .text {background-color: #FFFFFF; text-align: left; */
+/* 	padding-left: 10px; */
+/* 	display: flex; */
+/* 	flex-direction: column; */
+/* 	flex-wrap: wrap; */
+/* 	!*height: 50%;*! */
+/* 	} */
 
 @media (min-width: 320px) and (max-width: 768px) {
 	main #destinations .text {background-color: #FFFFFF; text-align: left;
@@ -249,62 +259,62 @@ main #destinations .text {background-color: #FFFFFF; text-align: left;
 		}
 	}
 
-main #destinations .text div { text-align: justify;
-	/*div { flex-shrink: 1;flex-grow: 2}*/
-	}
+/* main #destinations .text div { text-align: justify; */
+/* 	!*div { flex-shrink: 1;flex-grow: 2}*! */
+/* 	} */
 
-main #destinations h2 { text-align: left;
-	}
+/* main #destinations h2 { text-align: left; */
+/* 	} */
 
-main #top-10-airlines {
-	width: 35%;
-	/*margin-right: 5%;*/
-	/*flex-shrink: 2;flex-basis: auto;flex-grow: 1*/
-	}
+/* main #top-10-airlines { */
+/* 	width: 35%; */
+/* 	!*margin-right: 5%;*! */
+/* 	!*flex-shrink: 2;flex-basis: auto;flex-grow: 1*! */
+/* 	} */
 
-main #top-10-airlines tr {height: 10px; padding: 10px;}
+/* main #top-10-airlines tr {height: 10px; padding: 10px;} */
 
-main #top-10-airlines .text {background-color: #FFFFFF; text-align: left;
-	padding-left: 10px;
-	}
+/* main #top-10-airlines .text {background-color: #FFFFFF; text-align: left; */
+/* 	padding-left: 10px; */
+/* 	} */
 
-main #top-10-airlines h2 { text-align: left;
-	}
+/* main #top-10-airlines h2 { text-align: left; */
+/* 	} */
 
-main #hot-tickets {
-	width: 25%;
-	margin-left: 3%;
-	}
+/* main #hot-tickets { */
+/* 	width: 25%; */
+/* 	margin-left: 3%; */
+/* 	} */
 
-main #hot-tickets .text {
-	background-color: #FFFFFF; text-align: left;
-	padding-left: 10px;}
+/* main #hot-tickets .text { */
+/* 	background-color: #FFFFFF; text-align: left; */
+/* 	padding-left: 10px;} */
 
-main #hot-tickets h2 {
-	text-align: left;
-	}
+/* main #hot-tickets h2 { */
+/* 	text-align: left; */
+/* 	} */
 
-main #hot-tickets .text p {
-	text-align: justify;padding-left: 5px;
-	padding-right: 10px;
-	font-size: 13px;
-	}
+/* main #hot-tickets .text p { */
+/* 	text-align: justify;padding-left: 5px; */
+/* 	padding-right: 10px; */
+/* 	font-size: 13px; */
+/* 	} */
 
-main #faq .text { background-color: #FFFFFF; text-align: left;
-	padding-left: 10px;}
+/* main #faq .text { background-color: #FFFFFF; text-align: left; */
+/* 	padding-left: 10px;} */
 
-main#faq {width: 35%;margin-right: 5px;}
+/* main#faq {width: 35%;margin-right: 5px;} */
 
-main #proposals {width: 50%; margin-right: 15%;
-	margin-left: 15%;
-	height: 200%;
-	background-color: rgba(86, 45, 189, 0.71);
+/* main #proposals {width: 50%; margin-right: 15%; */
+/* 	margin-left: 15%; */
+/* 	height: 200%; */
+/* 	background-color: rgba(86, 45, 189, 0.71); */
 	/*position: relative;*/
 	/*button: 19em;*/
 	/*right: 19em;*/
 	/*background-color: #ae90f5;*/
 	/*height: 200px;}*/
-	}
+	/* } */
 
 footer {
 	background-color: #FAFAFA;
@@ -556,3 +566,162 @@ main #proposals button {height: 30px; width: 40px;
 	);
 	opacity: 0.75;
 	}
+
+
+body {
+	font-family: "Roboto", "Inter", sans-serif;
+	font-size: 10px;
+	}
+
+main { display: flex; justify-content: center; align-items: center;background-color: rgb(239, 241, 244);}
+
+.containers {display: grid;
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+	grid-template-columns: 1fr;
+	/* grid-template-rows: 50% 500px; */
+	gap: 5px;
+	width: 70%;
+	/* position: fixed; */
+	/* left: 18%; */
+	}
+
+.inner1 {display: grid;
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+	grid-template-columns: 1fr 1fr;
+	/* grid-template-rows: 100px; */
+	gap: 1px;
+	
+	}
+
+.inner2 {display: grid;
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+	grid-template-columns: 1.4fr 1fr;
+	grid-template-rows: auto auto;
+	gap: 1px;}
+
+.item {
+	/* border: 1px solid red; */
+	margin: 0.1em;
+	padding: 0.3em;
+	text-align: left;
+	
+	/* grid-area: 1 / 1 / 2 / 4; */
+	}
+
+span {color: #FF4D4D;}
+
+.text {background-color: #FFFFFF;
+	border-radius: 10px;}
+
+#hot-tickets .text {padding: 10px;}
+
+.it {
+	/* border: 1px solid red; */
+	margin: 0.5em;
+	padding: 0.3em;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	
+	}
+
+#manage.it div {font-size: 12px;color: rgb(146, 148, 152)}
+
+#tickets.it div {font-size: 12px;color: rgb(146, 148, 152)}
+
+.posts {;
+	/* border: 1px solid red; */
+	margin: 0.5em;
+	padding: 2em;}
+
+#top-10-airlines {
+	/* border: 1px solid red; */
+	}
+
+/* #tickets{margin: 0.5em; */
+/* padding: 2em; */
+/* } */
+.text1 {margin: 1em;
+	padding: 0.5em;
+	}
+
+.text11 {margin: 1em;
+	padding: 0.5em;
+	text-align: end;
+	}
+
+/* div {border: 1px solid red;} */
+
+tr, td {height: 25px; font-size: 13px;
+	width: 250px; text-align: right;;}
+
+#destinations {display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	
+	}
+
+.container1 {display: grid; grid-template-columns: 1fr 1fr 0.4fr; align-content: flex-start }
+
+.container1 div {margin: 1px; padding: 0.5em;}
+
+.container2 div {margin: 1px; padding: 0.5em;}
+
+.container2 {display: grid; grid-template-columns: 1fr 1fr 0.4fr;}
+
+.container3 .text li {margin: 0; padding: 10px; font-size: 12px;}
+
+/* #proposals1{display: grid;grid-template-columns: 1fr 0fr ; align-content: center; justify-content: center} */
+/* 	grid-template-areas: */
+/* 		    "textlap lap-top" */
+/* 	". email" */
+/* ; */
+/* 	justify-content: center; */
+/* 	align-items: center; */
+/* 	gap: 15px; */
+/* 	margin: 0.1em; */
+/* 	padding: 2em; */
+/* 	text-align: left;} */
+
+#proposals1 .textlap {font-size: 14px;}
+
+#proposals1.item1 {background-color: rgb(208, 209, 251); height: 200px;
+	border-radius: 10px;}
+
+.container4 {
+	display: grid;
+	grid-template-columns: 1.3fr 1fr; align-content: center; justify-content: stretch}
+
+/* .email { */
+/* 	grid-area: email; */
+/* 	 */
+/* 	padding: 20px; */
+/* 	text-align: center; */
+/* 	} */
+
+.lap-top1 {
+	
+	padding: 20px;
+	text-align: center;
+	}
+
+.manage_img {width: 100%; border: 0; height: 30px;margin-bottom: 0;
+	background-color: rgb(255, 232, 237); border-radius: 10px; color: black; place-content: center start}
+
+.manage_img a {color: rgb(247, 64, 104) }
+
+.manage_img:hover {width: 45%; border: 1px solid red; height: 60px;
+	background-color: #ef6363; }
+
+.img {grid-area: 1/ 3 / 4 / 4;}
+
+.bus {grid-area: 1/ 3 / 3 / 3;}
+
+#proposals1 .email1 #email1  { height: 37px; padding: 0px;width: 250px; border: 1px solid red;;border-radius: 4px}
+button{height: 38px; padding: 0px;width: 45px;background: #FF4D4D;border: none;border-radius: 2px}
+#proposals1 .email1 {margin-left: 20px ;   padding: 0px;margin-top: 10px; box-sizing: border-box}
+
+.textlap1 {padding-left: 12px; padding-top: 35px;margin: 2px; font-size: 16px; text-align: center;}

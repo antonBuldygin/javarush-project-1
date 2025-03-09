@@ -8,7 +8,7 @@ body {
 div {
 	text-align: center;
 	box-sizing: border-box;
-	/* border: solid 1px red; */
+	border: solid 1px red;
 	margin: 5px;
 	padding: 5px;
 	border-radius: 5px;
@@ -395,21 +395,24 @@ footer ul {
 	display: flex;
 	flex-wrap: wrap;
 	}
-
+header{background-color: #7413DC; }
 #header {
-	/*display: flex;*/
+	display: grid;
+	grid-template-columns: 1fr ;
 	left: 0;
 	line-height: 3.5em;
 	top: 0;
-	width: 100%;
-	background-color: #6E36F7;
+	width: 70%;
+	margin: 0 auto;
+	background-color: #7413DC;
+	padding-bottom: 10em;
 	}
 
 #header .list_of_options {
 	display: flex;
 	flex-direction: row;
 	/*justify-content: flex-start; !* Распределение элементов с равными промежутками *!*/
-	padding: 10px;
+	/* padding-bottom:  10px; */
 	flex-wrap: wrap;
 	}
 
@@ -465,7 +468,7 @@ footer ul {
 /*}*/
 .menu_block h1 {
 	width: 100%;
-	color: hotpink;
+	color: #FFA9BC;
 	height: 30px;
 	}
 

@@ -8,7 +8,7 @@ body {
 div {
 	text-align: center;
 	box-sizing: border-box;
-	border: solid 1px red;
+	/* border: solid 1px red; */
 	margin: 5px;
 	padding: 5px;
 	border-radius: 5px;
@@ -405,7 +405,7 @@ header{background-color: #7413DC; }
 	width: 70%;
 	margin: 0 auto;
 	background-color: #7413DC;
-	padding-bottom: 10em;
+	padding-bottom: 4em;
 	}
 
 #header .list_of_options {
@@ -436,7 +436,7 @@ header{background-color: #7413DC; }
 
 #header .find {
 	background-color: #FF4D4D;
-	border: solid 1px #FF4D4D;
+	/* border: solid 1px #FF4D4D; */
 	border-radius: 10px;
 	font-size: 13px;
 	color: #FFFFFF;

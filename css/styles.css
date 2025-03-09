@@ -4,8 +4,8 @@
 /* body { */
 /* 	font-family: "Roboto", "Inter", sans-serif; */
 /* 	} */
-div {border: 1px solid red;}
-#header  div {
+/* div {border: 1px solid red;} */
+#header div {
 	text-align: center;
 	box-sizing: border-box;
 	/*border: solid 1px red;*/
@@ -15,7 +15,7 @@ div {border: 1px solid red;}
 	font-size: 16px;
 	}
 
- #footer div {
+#footer div {
 	text-align: center;
 	box-sizing: border-box;
 	/*border: solid 1px red;*/
@@ -51,14 +51,6 @@ div {border: 1px solid red;}
 .menu_block, .top-menu { width: 100%;
 	margin-left: 0%;
 	}
-
-
-
-
-
-
-
-
 
 .low-images {
 	width: 90%;
@@ -128,7 +120,6 @@ div {border: 1px solid red;}
 	color: #FFFFFF
 	}
 
-
 .menu_block h1 {
 	width: 100%;
 	color: hotpink;
@@ -181,7 +172,7 @@ td, th {text-align: left;
 .partners-programm {color: #3AA3FA;
 	border: solid 1px #3AA3FA;
 	font-weight: bold;
-	margin:0 auto;
+	margin: 0 auto;
 	padding: 9px 17px 7px 17px;
 	height: 14px;
 	border-radius: 3px;
@@ -294,7 +285,6 @@ main #proposals button {height: 30px; width: 40px;
 	opacity: 0.75;
 	}
 
-
 body {
 	font-family: "Roboto", "Inter", sans-serif;
 	font-size: 10px;
@@ -401,8 +391,6 @@ tr, td {height: 25px; font-size: 13px;
 
 .container3 .text li {margin: 0; padding: 10px; font-size: 12px;}
 
-
-
 #proposals1 .textlap {font-size: 14px;}
 
 #proposals1.item1 {background-color: rgb(208, 209, 251); height: 200px;
@@ -411,7 +399,6 @@ tr, td {height: 25px; font-size: 13px;
 .container4 {
 	display: grid;
 	grid-template-columns: 1.3fr 1fr; align-content: center; justify-content: stretch}
-
 
 .lap-top1 {
 	
@@ -431,13 +418,13 @@ tr, td {height: 25px; font-size: 13px;
 
 .bus {grid-area: 1/ 3 / 3 / 3;}
 
-#proposals1 .email1 #email1  { height: 37px; padding: 0px;width: 250px; border: 1px solid red;;border-radius: 4px}
-button{height: 38px; padding: 0px;width: 45px;background: #FF4D4D;border: none;border-radius: 2px}
-#proposals1 .email1 {margin-left: 20px ;   padding: 0px;margin-top: 10px; box-sizing: border-box}
+#proposals1 .email1 #email1 { height: 37px; padding: 0px;width: 250px; border: 1px solid red;;border-radius: 4px}
+
+button {height: 38px; padding: 0px;width: 45px;background: #FF4D4D;border: none;border-radius: 2px}
+
+#proposals1 .email1 {margin-left: 20px; padding: 0px;margin-top: 10px; box-sizing: border-box}
 
 .textlap1 {padding-left: 12px; padding-top: 35px;margin: 2px; font-size: 16px; text-align: center;}
-
-
 
 .containers9 {display: grid;
 	box-sizing: border-box;
@@ -454,7 +441,7 @@ button{height: 38px; padding: 0px;width: 45px;background: #FF4D4D;border: none;b
 .top-images {display: grid;
 	box-sizing: border-box;
 	/* border: 1px solid red; */
-	grid-template-columns: repeat(4, 1fr) ;
+	grid-template-columns: repeat(4, 1fr);
 	/* grid-auto-flow: row; */
 	/* grid-template-rows: 100px; */
 	gap: 1px;
@@ -463,20 +450,20 @@ button{height: 38px; padding: 0px;width: 45px;background: #FF4D4D;border: none;b
 
 .top-images div {margin: 0px auto; padding-top: 2%; }
 
-.footer-content{display: grid;
+.footer-content {display: grid;
 	box-sizing: border-box;
 	/* border: 1px solid red; */
-	grid-template-columns: repeat(6, 1fr) ;
+	grid-template-columns: repeat(6, 1fr);
 	/* grid-auto-flow: row; */
 	/* grid-template-rows: 100px; */
 	gap: 1px;
 	justify-content: left; align-items: start;
 	}
 
-.low-images{display: grid;
+.low-images {display: grid;
 	box-sizing: border-box;
 	/* border: 1px solid red; */
-	grid-template-columns: repeat(2, 1fr) ;
+	grid-template-columns: repeat(2, 1fr);
 	/* grid-auto-flow: row; */
 	/* grid-template-rows: 100px; */
 	margin-top: 20px;
@@ -484,33 +471,40 @@ button{height: 38px; padding: 0px;width: 45px;background: #FF4D4D;border: none;b
 	justify-content: right; align-items: center;
 	}
 
-.first{display: grid;
+.first {display: grid;
 	box-sizing: border-box;
 	
-	grid-template-columns: 18em 12em 12em ;
+	grid-template-columns: 18em 12em 12em;
 	
 	gap: 0px;
 	justify-content: left; align-items: center;
 	
 	}
 
-.second{display: grid;
+.second {display: grid;
 	box-sizing: border-box;
 	
-	grid-template-columns: repeat(3, 3.5em) ;
+	grid-template-columns: repeat(3, 3.5em);
 	
 	gap: 0px;
 	justify-content: right; align-items: center;
 	}
 
-#facebook{margin: 0 auto}
-#instagram{margin: 0 auto}
-#telegram{margin: 0 auto}
-#apple{margin-left: 10px;padding-top: 3px}
-#google{margin-left: 15px;padding-top: 3px}
-.footer-content h4{margin: 0px; padding: 4px;}
+#facebook {margin: 0 auto}
+
+#instagram {margin: 0 auto}
+
+#telegram {margin: 0 auto}
+
+#apple {margin-left: 10px;padding-top: 3px}
+
+#google {margin-left: 15px;padding-top: 3px}
+
+.footer-content h4 {margin: 0 auto; padding: 4px;}
+
 .footer-content ul {margin: 3px; padding: 0px;}
-.footer-content ul li{margin-bottom: 3px; padding: 0px;}
+
+.footer-content ul li {margin-bottom: 3px; padding: 0px;}
 
 footer {
 	background-color: #FAFAFA;
@@ -521,24 +515,41 @@ footer ul {
 	list-style-type: none;
 	}
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1000px) {
+	
+	.containers {display: grid;
+		box-sizing: border-box;
+		/* border: 1px solid red; */
+		grid-template-columns: 1fr;
+		/* grid-template-rows: 50% 500px; */
+		gap: 5px;
+		width: 100%;
+		margin-left: 20px;
+		margin-right: 20px;
+		/* position: fixed; */
+		/* left: 18%; */
+		}
 	
 	#destinations {display: grid;
 		grid-template-columns: 1fr;
 		background-color: #FFFFFF;
 		border-radius: 10px;
 		}
+	
 	.text11 {margin: 1em;
 		padding: 0.5em;
 		text-align: start;
 		}
-	.partners-programm{
+	
+	.partners-programm {
 		grid-column-start: 1;
 		grid-column-end: 3;
 		justify-self: center;
 		gap: 10px;
 		margin: 10px;
+		font-size: 14px;
 		}
+	
 	.inner1 {display: grid;
 		box-sizing: border-box;
 		/* border: 1px solid red; */
@@ -561,8 +572,9 @@ footer ul {
 		grid-template-columns: 1fr;
 		/* grid-template-rows: 50% 500px; */
 		gap: 5px;
-		width: 70%;
-		margin: 0 auto;
+		width: 100%;
+		margin-right: 20px;
+		margin-left: 20px;
 		/* position: fixed; */
 		/* left: 18%; */
 		}
@@ -603,7 +615,7 @@ footer ul {
 	.first {display: grid;
 		box-sizing: border-box;
 		
-		grid-template-columns: 12em 12em;
+		grid-template-columns: 13em 13em;
 		
 		gap: 0px;
 		justify-content: center; align-items: center;
@@ -625,7 +637,6 @@ footer ul {
 		justify-content: center; align-items: center;
 		}
 	
-	
 	/* main #destinations .text {background-color: #FFFFFF; text-align: left; */
 	/* 	!*width: 100%;*! */
 	/* 	padding-left: 10px; */
@@ -635,35 +646,25 @@ footer ul {
 	/* 	height: auto; */
 	/* 	font-size: 9px; */
 	/* 	} */
-	
 	/* body { */
 	/* 	padding: 20px; */
 	/* 	} */
-	
 	/* main #manage { */
 	/* 	width: 100%; */
 	/* 	} */
-	
 	/* main #destinations { */
 	/* 	width: 100%; */
 	/* 	} */
-	
 	/* main #tickets { */
 	/* 	width: 100%; */
 	/* 	} */
-	
 	/* main #top-10-airlines { */
 	/* 	width: 100%; */
 	/* 	} */
-	
 	/* main #hot-tickets { */
 	/* 	margin: 0; */
 	/* 	width: 100%; */
 	/* 	} */
-	
-	
-	
-	
 	/* main { */
 	/* 	display: flex; */
 	/* 	background-color: lightgrey; */
@@ -674,8 +675,6 @@ footer ul {
 	/* 	!*justify-content: center;*! */
 	/* 	!*justify-content: space-evenly;*! */
 	/* 	} */
-	
-	
 	#header #search-form fieldset {
 		display: flex;
 		/*width: 95%;*/
@@ -794,4 +793,37 @@ footer ul {
 	.burger-checkbox:checked ~ .menu-list {
 		transform: translateX(0);
 		}
+	
+	#facebook {margin: 0 auto}
+	
+	#instagram {margin: 0 auto}
+	
+	#telegram {margin: 0 auto}
+	
+	#apple {margin-left: 10px;padding-top: 3px; width: 120px}
+	
+	#apple img {width: 120px}
+	
+	#google img {width: 120px}
+	
+	#google {margin-left: 15px;padding-top: 3px}
+	
+	.footer-content h4 {margin: 0 auto; padding: 4px; font-size: 16px;}
+	
+	.footer-content ul {margin: 3px; padding: 0px;}
+	
+	.footer-content ul li {margin-bottom: 3px; padding: 0px;}
+	
+	.footer-content h4 {
+		border-bottom: 1px solid #CCC; padding: 14px;
+		}
+	
+	.footer-content .countries {border-top: 1px solid #CCC}
+	
+	#faq .text ul li {list-style: none; color: #1690f5;font-size: 16px;}
+	
+	#faq .text a {list-style: none; color: #1690f5;font-size: 16px; text-decoration: none;}
+	
+	#faq .text ul {margin: 0;padding: 0;}
+	h2{font-size: 18px}
 	}

@@ -457,6 +457,20 @@ label {font-size: 16px; padding-left: 60px;}
 .arrow {position: absolute; top: 155px; left: 290px; }
 p{color: #7A828B; text-align: justify}
 
+.partners-programm {
+	/*  */
+	justify-self: center;
+	gap: 10px;
+	
+	border: solid 1px #3A92F9;
+	color: #3A92F9;
+	height: 30px;
+	align-content: center;
+	padding-right: 2px;
+	padding-left: 0px;
+	border-radius: 3px;
+	}
+
 /* td{width: 20px;} */
 @media (min-width: 320px) and (max-width: 1000px) {
 	

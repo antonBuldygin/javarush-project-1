@@ -84,7 +84,7 @@ header{background-color: #7413DC; }
 	display: flex;
 	flex-direction: row;
 	/*justify-content: flex-start; !* Распределение элементов с равными промежутками *!*/
-	padding: 10px;
+	/* padding: 10px; */
 	flex-wrap: wrap;
 	}
 
@@ -185,8 +185,8 @@ td, th {text-align: left;
 #navv {
 	/*background: #334; !* Задаем основной фон меню *!*/
 	padding: 0 3%; /* Задаем внутренние отступы */
-	float: right;
-	margin-right: 100px;
+	/* float: right; */
+	/* margin-right: 100px; */
 	}
 
 #navv ul {
@@ -194,8 +194,8 @@ td, th {text-align: left;
 	}
 
 #navv ul li {
-	background: #a182f6;
-	display: inline-block; /*Выстраиваем пункты меню в ряд по горизонтали */
+	/* background: #a182f6; */
+	/* display: inline-block; !*Выстраиваем пункты меню в ряд по горизонтали *! */
 	border-radius: 15px;
 	height: 40px;
 	}
@@ -210,17 +210,17 @@ td, th {text-align: left;
 	/*text-decoration: none;*/
 	/*text-transform: uppercase;*/
 	/*border-top: 1px solid #445;*/
-	height: 30px;
+	/* height: 30px; */
 	}
 
-#navv ul li:hover {
-	background: #5e488d; /* Меняем фон пункта меню при наведении указателя мыши */
-	}
+/* #navv ul li:hover { */
+/* 	background: #5e488d; !* Меняем фон пункта меню при наведении указателя мыши *! */
+/* 	} */
 
 #navv ul li ul {
 	display: none; /* Прячем пункты выпадающего блока меню */
 	position: absolute;
-	background: #a182f6; /* Задаем фон выпадающего блока меню */
+	/* background: #a182f6; !* Задаем фон выпадающего блока меню *! */
 	}
 
 #navv ul li:hover ul {
@@ -233,7 +233,7 @@ td, th {text-align: left;
 
 .top-menu {display: flex;
 	justify-content: flex-end;
-	align-self: flex-end;
+	/* align-self: flex-end; */
 	}
 
 #language {margin-top: 20px;height: 30px;}
@@ -335,7 +335,7 @@ span {color: #FF4D4D;}
 .text {background-color: #FFFFFF;
 	border-radius: 10px;}
 
-#hot-tickets .text {padding: 10px;}
+#hot-tickets .text {padding: 10px; margin-bottom: 60px}
 
 .it {
 	/* border: 1px solid red; */
@@ -693,7 +693,7 @@ footer ul {
 		/*padding: 10px;*/
 		}
 	
-	#header .list_of_options div {flex-shrink: 1;flex-grow: 2}
+	/* #header .list_of_options div {flex-shrink: 1;flex-grow: 2} */
 	
 	.top-menu {display: flex;
 		justify-content: flex-end;

@@ -387,7 +387,7 @@ fieldset{display: grid;grid-template-columns:5fr 1fr; border: 2px solid #7413DC;
 	/* height: 0%; */
 	/* width: 20%; */
 	background-color: white;
-	/* border-left: 2px solid gainsboro; */
+	border-left: 2px solid gainsboro;
 	}
 
 

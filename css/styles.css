@@ -43,8 +43,8 @@ main { display: flex; justify-content: center; align-items: center;background-co
 	border-radius: 50px;
 	background-color: #8853DD;
 	text-align: center;
-	color: white;
-	align-content: center;
+	/* color: white; */
+		align-content: center;
 	text-decoration: none;
 	/* justify-content: left; */
 	/* text-align: left; */
@@ -52,7 +52,10 @@ main { display: flex; justify-content: center; align-items: center;background-co
 	/* grid-area: 1 / 1 / 2 / 4; */
 	}
 
-.item:hover {
+.item:hover  .nav-item  {
+	background-color: white;color: black;
+	}
+.item:hover    {
 	background-color: white;color: black;
 	}
 
@@ -308,8 +311,8 @@ header {background-color: #7413DC;}
 	/* border-radius: 15px; */
 	}
 
-.nav-item:hover {color: black;
-	}
+/* .nav-item:hover {color: black; */
+/* 	} */
 
 /* .header .list_of_options a { */
 /* 	color: #FFFFFF; */
@@ -321,13 +324,13 @@ header {background-color: #7413DC;}
 	border-radius: 10px;
 	font-size: 13px;
 	color: #FFFFFF;
-	width: 10%;
+	width: 100%;
 	
 	}
 
 .header .find:hover {
 	background-color: #FF4D4D;
-	border: #FFFFFF;
+	/* border: #FFFFFF; */
 	font-size: 13px;
 	color: #FFFFFF;
 	animation: scaleUp 1s ease;
@@ -363,15 +366,20 @@ td, th {text-align: left;
 	margin: 5%;
 	}
 
-.header #search-form fieldset {
-	display: flex;
+.header #search-form .fieldset {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
 	position: relative;
-	width: 95%;
+	height: 60px;
+	/* width: 99%; */
+	gap: 1px;
 	color: darkgray;
 	background-color: #FFFFFF;
-	border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+	
 	}
-
+.passenger-menu{border-radius: 10px 10px 10px 10px;}
+fieldset{display: grid;grid-template-columns:5fr 1fr; border: 2px solid #7413DC; gap: 10px; }
 .header .city-to-menu, .data-to-menu, .data-from-menu, .passenger-menu, .find {
 	flex: 1 1 calc(33.333% - 20px);
 	/* align-items: baseline; */
@@ -379,11 +387,12 @@ td, th {text-align: left;
 	/* height: 0%; */
 	/* width: 20%; */
 	background-color: white;
-	border-left: 2px solid gainsboro;
+	/* border-left: 2px solid gainsboro; */
 	}
 
+
 .d1 {
-	position: absolute; left: 173px;top: 23px;
+	position: absolute; left: 168px;top: 16px;
 	width: 30px;
 	height: 30px;
 	background-color: white;
@@ -393,16 +402,21 @@ td, th {text-align: left;
 	border-radius: 50%;
 	}
 
-.imggg {position: absolute; left: 175px;top: 24px}
+.imggg {position: absolute; left: 170px;top: 18px}
 
-.header .city-from-menu {justify-content: right;flex: 1 1 calc(33.333% - 20px);
-	align-items: start;
-	align-content: start;
-	justify-content: start;
-	/* height: 0%; */
-	/* width: 20%; */
-	background-color: white;
-	}
+#data-to, #data-from{border: solid 1px #FFFFFF}
+
+/* .header .city-from-menu  , .city-to-menu {justify-content: right;flex: 1 1 calc(33.333% - 20px); */
+/* 	display: grid; */
+/* 	grid-template-columns: repeat(1, 1fr); */
+/* 	align-items: center; */
+/* 	align-content: center; */
+/* 	justify-items: start; */
+/* 	justify-content: start; */
+/* 	!* height: 0%; *! */
+/* 	!* width: 20%; *! */
+/* 	background-color: white; */
+/* 	} */
 
 label {font-size: 16px; padding-left: 60px;}
 
@@ -410,8 +424,15 @@ label {font-size: 16px; padding-left: 60px;}
 	/*flex: 1 1 calc(33.333% - 20px);*/
 	/* height: 10%; */
 	/* width: 20%; */
-	background-color: darkgray;
-	animation: scaleUp 1s ease;;
+	/* background-color: darkgray; */
+	/* animation: scaleUp 1s ease;; */
+	/* background-color: #FF4D4D; */
+	/* border: #FFFFFF; */
+	font-size: 13px;
+	color: #FFFFFF;
+	animation: scaleUp 1s ease;
+	box-shadow: 10px 4px 10px 3px #888;
+	/* box-shadow: #FF4D4D 10px 10px 10px; */
 	
 	}
 
@@ -419,6 +440,8 @@ label {font-size: 16px; padding-left: 60px;}
 	color: black;
 	border: solid 1px white;
 	font-weight: bold;
+	text-align: center;
+	/* width: 100%; */
 	}
 
 /* .button { */
@@ -474,7 +497,107 @@ p{color: #7A828B; text-align: justify}
 /* td{width: 20px;} */
 @media (min-width: 320px) and (max-width: 1000px) {
 	
-	#destinations {display: grid;
+	.header #search-form .fieldset{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		color: darkgray;
+		background-color: #FFFFFF;
+		/* border-radius: 5px; */
+		margin-bottom:20px ;
+		}
+	fieldset{display: grid;grid-template-columns:1fr; gap: 20px}
+	.header .city-from-menu, .city-to-menu, .data-to-menu, .data-from-menu, .passenger-menu, .find {
+		
+		/* align-items: baseline; */
+		display: grid;
+		align-content: start;
+		height: 100px;
+		width: 100%;
+		border-radius: 5px;
+		background-color: white;
+		/* border-left: 2px solid gainsboro; */
+		}
+	.city-from-menu{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		}
+	/* .passenger-menu{border: 10px solid red;} */
+	.city-to-menu{grid-column-start: 1;
+		grid-column-end: 3;}
+	.passenger-menu{grid-column-start: 1;
+		grid-column-end: 3;}
+	
+	.header .city-from-menu:hover, .city-to-menu:hover, .data-to-menu:hover, .data-from-menu:hover, .passenger-menu:hover {
+		display: grid;
+		align-content: start;
+		/* justify-content: start; */
+		height: 100px;
+		/* width: 100%; */
+		/* border: 1px solid black; */
+		/* background-color: white; */
+		/* border-left: 2px solid gainsboro; */
+		
+		}
+	.header .city-from-menu, .city-to-menu, .data-to-menu, .data-from-menu, .passenger-menu, .find {
+		
+		/* align-items: baseline; */
+		/* display: grid; */
+		/* align-content: stretch; */
+		/* height: 100px; */
+		/* width: 100%; */
+		/* border: 1px solid black; */
+		/* background-color: white; */
+		border-bottom: 3px solid gainsboro;
+		}
+	.passenger-menu{border-bottom: #FFFFFF 1px solid; }
+	.data-to-menu{border-right: 5px solid gainsboro ;  }
+	.header .find {
+		background-color: #FF4D4D;
+		border: solid 1px #FF4D4D;
+		border-radius: 10px;
+		font-size: 20px;
+		color: #FFFFFF;
+		width: 100%;
+		
+		}
+	
+	.header .find:hover {
+		/* background-color: #FF4D4D; */
+		/* border: #FFFFFF; */
+		font-size: 23px;
+		/* color: #FFFFFF; */
+		animation: scaleUp 1s ease;
+		box-shadow: 10px 4px 10px 3px #888;}
+	
+	.header #cities, #cities_to {
+		color: black;
+		/* border: solid 1px white; */
+		font-weight: bold;
+		text-align: start;
+		/* width: 100%; */
+		}
+	.d1 {
+		position: absolute;
+		left: 473px;top: 87px;
+		width: 30px;
+		height: 30px;
+		background-color: white;
+		/* opacity: 10%; */
+		border: 2px solid #FF4D4D;
+		/* z-index: 19; */
+		border-radius: 50%;
+		}
+	
+	.imggg {
+		position:absolute;
+		rotate: 90deg;
+		left: 473px;top: 88px}
+		
+		#destinations {display: grid;
 		grid-template-columns: 1fr;
 		background-color: #FFFFFF;
 		border-radius: 10px;

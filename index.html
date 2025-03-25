@@ -102,133 +102,153 @@
 			<form id="form1" method="get" action="#">
 				<fieldset>
 					<div class='fieldset'>
-					<div class="city-from-menu">
-						<label for="cities">Откуда</label>
-						<input list="city-from" name="city-from" id="cities" value="Аксай">
-						<datalist id="city-from" name="city-from-chosen">
-							<!--							<option>Варшава-->
-							<!--								<p>Ближайшие аэропорты</p>-->
-							<!--								<ul>-->
-							<!--									<li>Кишинев</li>-->
-							<!--									<li>Балице</li>-->
-							<!--								</ul>-->
-							<!--							</option>-->
-							<!--							<option>Кишинев-->
-							<!--								<p>Ближайшие аэропорты</p>-->
-							<!--								<ul>-->
-							<!--									<li>Кишинев</li>-->
-							<!--									<li>Балице</li>-->
-							<!--								</ul>-->
-							<!--							</option>-->
-							<!--							<option>Стамбул-->
-							<!--								<p>Ближайшие аэропорты</p>-->
-							<!--								<ul>-->
-							<!--									<li>Кишинев</li>-->
-							<!--									<li>Балице</li>-->
-							<!--								</ul>-->
-							<!--							</option>-->
-							<!--							<option>Тбилиси-->
-							<!--								<p>Ближайшие аэропорты</p>-->
-							<!--								<ul>-->
-							<!--									<li>Кишинев</li>-->
-							<!--									<li>Балице</li>-->
-							<!--								</ul>-->
-							<!--							</option>-->
-						</datalist>
-					</div>
-					<div class='d1'></div>
-					<div class='imggg'>
-						<img src="img/assets/swap.svg" alt="swap" width="30px">
-					</div>
-					<div class="city-to-menu">
-						<label for="cities_to">Куда</label>
-						<input list="city-to" name="city-to" id="cities_to" value='Азнакаево'>
-						<datalist id="city-to" name="city-from-chosen">
-							<!--							<option>-->
-							<!--								<p>Ближайшие аэропорты</p>-->
-							<!--								<ul>-->
-							<!--									<li>Кишинев</li>-->
-							<!--									<li>Балице</li>-->
-							<!--								</ul>-->
-							<!--							</option>-->
-							<!--							<option>-->
-							<!--								<p>Ближайшие аэропорты</p>-->
-							<!--								<ul>-->
-							<!--									<li>Кишинев</li>-->
-							<!--									<li>Балице</li>-->
-							<!--								</ul>-->
-							<!--							</option>-->
-							<!--							<option>-->
-							<!--								<p>Ближайшие аэропорты</p>-->
-							<!--								<ul>-->
-							<!--									<li>Кишинев</li>-->
-							<!--									<li>Балице</li>-->
-							<!--								</ul>-->
-							<!--							</option>-->
-							<!--							<option>-->
-							<!--								<p>Ближайшие аэропорты</p>-->
-							<!--								<ul>-->
-							<!--									<li>Кишинев</li>-->
-							<!--									<li>Балице</li>-->
-							<!--								</ul>-->
-							<!--							</option>-->
-						</datalist>
-					</div>
-					<div class="data-to-menu">
-						<label for="data-to">Туда</label>
-						<input type="date" name="data-from" min="2024-06-01" max="2025-08-31" id="data-to"/>
-					</div>
-					<div class="data-from-menu">
-						<label for="data-from">Обратно</label>
-						<input type="date" name="data-from" min="2024-06-01" max="2025-08-31" id="data-from"/>
-					</div>
-					<div class="passenger-menu">
-						<dialog>
-							<div>
-								<div>Пассажиры, Класс</div>
-								<div>Максимум 9 пассажиров</div>
-								<label for="adults">Взрослые <span>старше 12 лет</span>
-								</label>
-								<input type="number" id="adults" name="adults" min="0" max="9" value='0'/>
-								<label for="children">Дети <span>2-12 лет</span>
-								</label>
-								<input type="number" id="children" name="children" min="0" max="9" value='0'/>
-								<label for="babies">Младенцы <span>до 2 лет</span></label>
-								<input type="number" id="babies" name="babies" min="0" max="9" value='0'/>
-							</div>
-							<div style='display: flex;
-							justify-content: center; '>
-								<div style='padding: 0px'>
-									<input type="radio" id="anytype" name="ticketclass" value="anytype" checked>
-									<label for="anytype">Любой</label>
+						<div class="city-from-menu">
+							<label for="cities">Откуда</label>
+							<input list="city-from" name="city-from" id="cities" value="Аксай">
+							<datalist id="city-from" name="city-from-chosen">
+								<!--							<option>Варшава-->
+								<!--								<p>Ближайшие аэропорты</p>-->
+								<!--								<ul>-->
+								<!--									<li>Кишинев</li>-->
+								<!--									<li>Балице</li>-->
+								<!--								</ul>-->
+								<!--							</option>-->
+								<!--							<option>Кишинев-->
+								<!--								<p>Ближайшие аэропорты</p>-->
+								<!--								<ul>-->
+								<!--									<li>Кишинев</li>-->
+								<!--									<li>Балице</li>-->
+								<!--								</ul>-->
+								<!--							</option>-->
+								<!--							<option>Стамбул-->
+								<!--								<p>Ближайшие аэропорты</p>-->
+								<!--								<ul>-->
+								<!--									<li>Кишинев</li>-->
+								<!--									<li>Балице</li>-->
+								<!--								</ul>-->
+								<!--							</option>-->
+								<!--							<option>Тбилиси-->
+								<!--								<p>Ближайшие аэропорты</p>-->
+								<!--								<ul>-->
+								<!--									<li>Кишинев</li>-->
+								<!--									<li>Балице</li>-->
+								<!--								</ul>-->
+								<!--							</option>-->
+							</datalist>
+						</div>
+						<div class='d1'></div>
+						<div class='imggg'>
+							<img src="img/assets/swap.svg" alt="swap" width="30px">
+						</div>
+						<div class="city-to-menu">
+							<label for="cities_to">Куда</label>
+							<input list="city-to" name="city-to" id="cities_to" value='Азнакаево'>
+							<datalist id="city-to" name="city-from-chosen">
+								<!--							<option>-->
+								<!--								<p>Ближайшие аэропорты</p>-->
+								<!--								<ul>-->
+								<!--									<li>Кишинев</li>-->
+								<!--									<li>Балице</li>-->
+								<!--								</ul>-->
+								<!--							</option>-->
+								<!--							<option>-->
+								<!--								<p>Ближайшие аэропорты</p>-->
+								<!--								<ul>-->
+								<!--									<li>Кишинев</li>-->
+								<!--									<li>Балице</li>-->
+								<!--								</ul>-->
+								<!--							</option>-->
+								<!--							<option>-->
+								<!--								<p>Ближайшие аэропорты</p>-->
+								<!--								<ul>-->
+								<!--									<li>Кишинев</li>-->
+								<!--									<li>Балице</li>-->
+								<!--								</ul>-->
+								<!--							</option>-->
+								<!--							<option>-->
+								<!--								<p>Ближайшие аэропорты</p>-->
+								<!--								<ul>-->
+								<!--									<li>Кишинев</li>-->
+								<!--									<li>Балице</li>-->
+								<!--								</ul>-->
+								<!--							</option>-->
+							</datalist>
+						</div>
+						<div class="data-to-menu">
+							<label for="data-to">Туда</label>
+							<input type="date" name="data-from" min="2024-06-01" max="2025-08-31" id="data-to"/>
+						</div>
+						<div class="data-from-menu">
+							<label for="data-from">Обратно</label>
+							<input type="date" name="data-from" min="2024-06-01" max="2025-08-31" id="data-from"/>
+						</div>
+						<div class="passenger-menu">
+							<dialog>
+								<div class='choose-passenger'>
+									<!--								<div>Пассажиры, Класс</div>-->
+									<div class='quantity-limit'>Максимум 9 пассажиров</div>
+									<div class='pas-qty-container'>
+										<label for="adults" style='font-size: 10px; padding-left:0px;width: 100px'>
+											<div>Взрослые</div>
+											<div style='font-size: 10px; padding-left:0px;width: 100px;color: darkgray;'>
+												старше 12 лет
+											</div>
+										</label>
+										<input type="number" id="adults" name="adults" min="0" max="9" value='0'/>
+										<label style='font-size: 10px; padding-left:0px' for="children">
+											<div>Дети</div>
+											<div style='font-size: 10px; padding-left:0px;width: 100px;color:
+											darkgray;'>2-12 лет
+											</div>
+										</label>
+										<input type="number" id="children" name="children" min="0" max="9" value='0'/>
+										<label style='font-size: 10px; padding-left:0px' for="babies">
+											<div>Младенцы</div>
+											<div style='font-size: 10px; padding-left:0px;width: 100px;color:
+											darkgray; '>до 2 лет
+											</div>
+										</label>
+										<input type="number" id="babies" name="babies" min="0" max="9" value='0'/>
+									</div>
 								</div>
-								<div>
-									<input type="radio" id="business" name="ticketclass" value="business">
-									<label for="business">Бизнес</label>
+								<div class='class'>Класс</div>
+								<div class='radio'>
+									<div style='padding: 0px'>
+										<label style='padding: 0; '>
+											<input type="radio" class="anytype" name="ticketclass" value="anytype" checked
+												   style='display: none; '>
+											<span class="custom-radio">Любой</span>
+										</label>
+									</div>
+									<div>
+										<label style='padding: 0; '>
+											<input type="radio" class="anytype" name="ticketclass" value="business"
+												   style='display: none; '>
+											<span class="custom-radio">Бизнес</span>
+										</label>
+									</div>
+									<div>
+										<label style='padding: 0; '>
+											<input type="radio" class="anytype" name="ticketclass" value="econom"
+												   style='display: none; '>
+											<span class="custom-radio">Эконом</span>
+										</label>
+									</div>
 								</div>
-								<div>
-									<input type="radio" id="econom" name="ticketclass" value="econom">
-									<label for="business">Эконом</label>
-								</div>
-							</div>
-							<button style='display: flex; width: 90%; justify-content: center;background-color:
-							#FF4D4D; border: solid 1px #FF4D4D;margin-left: 5%;
-							height:60px; color: #FAFAFA; font-weight: 900; box-sizing: border-box;
-    						align-items: center;'> OK
+								<button class='ok'> OK</button>
+							</dialog>
+							<button class='passenger-button'>
+								Пассажиры, Класс
 							</button>
-						</dialog>
-						<button style='width: 100%; justify-content: center;background-color: white; border: #FAFAFA;color: darkgray;'>
-							Пассажиры, Класс
-						</button>
-					</div>
-					<!--					<div class='fee'>-->
-					<!--						<div class='container'>-->
-					<!--							<div class='title'>-->
-					<!--								<h2></h2>-->
-					<!--								<p></p>-->
-					<!--							</div>-->
-					<!--						</div>-->
-					<!--					</div>-->
+						</div>
+						<!--					<div class='fee'>-->
+						<!--						<div class='container'>-->
+						<!--							<div class='title'>-->
+						<!--								<h2></h2>-->
+						<!--								<p></p>-->
+						<!--							</div>-->
+						<!--						</div>-->
+						<!--					</div>-->
 					</div>
 					<input type="submit" value="Найти" class="find">
 				</fieldset>

@@ -10,30 +10,16 @@
 <body>
 <header>
 	<div class='header'>
-		<div class="menu">
-			<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
-			<label for="burger-checkbox" class="burger"></label>
-			<ul class="menu-list">
-				<ul>
-					<li>
-						<a href="#/" class="menu-item">Корпоративным клиентам</a>
-					</li>
-					<li>
-						<a href="#" class="menu-item">Авиабилеты</a>
-					</li>
-					<li>
-						<a href="/sitemap" class="menu-item">Справка</a>
-					</li>
-				</ul>
-			</ul>
-		</div>
 		<div class="top-menu">
 			<nav id="navv">
-				<ul>
-					<li>
+				<!--				<div class='th_lines'>-->
+				<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+				<label for="burger-checkbox" class="burger"></label>
+				<!--		</div>-->
+				<ul >
+					<li style='height: 20px; padding: 12px; align-content: center; border-radius: 10px'>
 						<a href="#/">Корпоративным клиентам</a>
-					</li>
-					<li>
+					<li style='height: 20px ; padding: 12px; align-content: center; border-radius: 10px'>
 						<a href="#">Авиабилеты</a>
 						<!--					<ul>-->
 						<!--						<li>-->
@@ -47,7 +33,7 @@
 						<!--						</li>-->
 						<!--					</ul>-->
 					</li>
-					<li>
+					<li style='height: 20px; padding: 12px; align-content: center; border-radius: 10px'>
 						<a href="/sitemap">Справка</a>
 						<!--					<ul class="second1">-->
 						<!--						<li>-->
@@ -63,13 +49,13 @@
 					</li>
 				</ul>
 				<div class='lang-img'>
-					<img src="img/assets/language-svgrepo-com.svg" alt="swap" width="30px">
+					<img class='globus' src="img/assets/language-svgrepo-com.svg" alt="swap" width="40px">
 				</div>
-				<select class='language' name="language">
+				<div class='language'><select  name="language">
 					<option value="ru">Русский</option>
 					<option value="en">English</option>
 					<option value="cn">Chinese</option>
-				</select>
+				</select></div>
 			</nav>
 		</div>
 		<div class='best-tickets'><h1>Лучшие авиабилеты по самым низким ценам</h1></div>
@@ -176,9 +162,7 @@
 						</div>
 						<div class="data-to-menu">
 							<label for="data-to">Туда</label>
-							<input type="date"    name="data-from"
-								   min="2024-06-01" max="2025-08-31"
-								   id="data-to"/>
+							<input type="date" name="data-from" min="2024-06-01" max="2025-08-31" id="data-to"/>
 						</div>
 						<div class="data-from-menu">
 							<label for="data-from">Обратно</label>
@@ -217,8 +201,8 @@
 								<div class='radio'>
 									<div style='padding: 0px'>
 										<label style='padding: 0; '>
-											<input type="radio" class="anytype" name="ticketclass" value="anytype" checked
-												   style='display: none; '>
+											<input type="radio" class="anytype" name="ticketclass" value="anytype"
+												   checked style='display: none; '>
 											<span class="custom-radio">Любой</span>
 										</label>
 									</div>

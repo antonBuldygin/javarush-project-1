@@ -628,6 +628,9 @@ input#adults, input#children, input#babies {outline: none;border: none; width: 3
 
 .globus {width: 30px; }
 
+/* .menu-list { position: absolute; background-color: #FF4D4D; top: 10px; border-radius: 10px } */
+.ull { grid-template-columns:1fr 1fr 1fr; gap: 0px; justify-content: end; align-content: end;}
+
 /* td{width: 20px;} */
 @media (min-width: 320px) and (max-width: 1000px) {
 	header {
@@ -940,8 +943,8 @@ input#adults, input#children, input#babies {outline: none;border: none; width: 3
 	
 	.top-menu #navv a {color: #FFFFFF; text-decoration: none;}
 	
-	.top-menu #navv ul {display: none; grid-template-columns:1fr; gap: 0px; justify-content: end; align-content: end;}
-	
+	 .menu-list {display: none; position: absolute; background-color: #FF4D4D; top: 10px; border-radius: 10px }
+	.ull { grid-template-columns:1fr; gap: 0px; justify-content: end; align-content: end;}
 	.th_lines {display: block;top: 20px; width: 100px;}
 	
 	.language {
@@ -1021,8 +1024,11 @@ input#adults, input#children, input#babies {outline: none;border: none; width: 3
 		/* transition: bottom .3s, transform .3s .15s; */
 		}
 	
-	.burger-checkbox:checked ~ .menu-list {
-		transform: translateX(0%);
+	.burger-checkbox:checked ~  .menu-list  {
+		right: 430px;
+		width: 400px;
+		display: block;
+		/* transform: translateX(0%); */
 		}
 	
 	.burger-checkbox:checked ~ .first {

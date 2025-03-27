@@ -3,7 +3,7 @@ body {
 	font-size: 10px;
 	}
 
-main { display: flex; justify-content: center; align-items: center;background-color: rgb(239, 241, 244);}
+main {position: relative; top:0px;  display: flex; justify-content: center; align-items: center;background-color: rgb(239, 241, 244);}
 
 .containers {display: grid;
 	box-sizing: border-box;
@@ -286,9 +286,15 @@ button {height: 38px; padding: 0px;width: 45px;background: #FF4D4D;border: none;
 
 .menu {display: none;}
 
-header {background-color: #7413DC;}
+header {
+	top:0px;
+	z-index: 1000;
+	/* position: sticky; */
+	background-color: #7413DC;}
 
 .header {
+	/* position: relative; */
+	
 	/* border: 1px solid red;  */
 	display: grid;
 	box-sizing: border-box;
@@ -624,6 +630,13 @@ input#adults, input#children, input#babies {outline: none;border: none; width: 3
 
 /* td{width: 20px;} */
 @media (min-width: 320px) and (max-width: 1000px) {
+	header {
+		position: relative;
+		background-color: #7413DC;}
+	.header {
+		
+		width: 94%;
+		 }
 	.globus {width: 40px; }
 	.header #search-form .fieldset {
 		display: grid;
